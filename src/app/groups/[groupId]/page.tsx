@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { ParticipantList } from "@/components/group/ParticipantList";
 import { ShareGroupLink } from "@/components/group/ShareGroupLink";
+import Link from "next/link";
+import { Settings } from "lucide-react";
 
 interface PageProps {
   params: Promise<{ groupId: string }>;
@@ -25,7 +27,7 @@ export async function generateMetadata({ params }: PageProps) {
       title: `Sorteio: ${group.name}`,
       description: `Você está participando do ${group.category}! Acesse para ver quem você tirou.`,
       // Aqui você colocaria a URL de uma imagem padrão bonitinha do seu sistema
-      images: ["/images/og-amigo-secreto.png"],
+      images: ["/gift1.png"],
     },
   };
 }
@@ -75,6 +77,14 @@ export default async function GroupPage({ params }: PageProps) {
 
         {/* Passamos a lista segura para o componente interativo */}
         <ParticipantList participants={safeParticipants} groupId={group.id} />
+      </div>
+      <div className="mt-16 text-center pb-8">
+        <Link
+          href={`/groups/${group.id}/admin`}
+          className="text-sm text-gray-400 hover:text-gray-600 flex items-center justify-center gap-2"
+        >
+          <Settings className="w-4 h-4" /> Administrar Grupo
+        </Link>
       </div>
     </main>
   );

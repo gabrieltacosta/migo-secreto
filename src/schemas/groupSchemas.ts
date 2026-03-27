@@ -1,6 +1,7 @@
 import { z } from "zod";
+import { Gift, Candy, User, VenetianMask as Mask, Skull } from "lucide-react"; // Importe os ícones desejados
 
-// Categorias predefinidas baseadas nos exemplos
+// 1. Categorias apenas em texto para o Zod validar
 export const GROUP_CATEGORIES = [
   "Amigo Secreto Tradicional",
   "Amigo Chocolate",
@@ -9,14 +10,20 @@ export const GROUP_CATEGORIES = [
   "Inimigo Secreto",
 ] as const;
 
-// Schema para um participante individual
+// 2. Opções visuais para o Frontend (Texto + Ícone)
+export const CATEGORY_OPTIONS = [
+  { value: "Amigo Secreto Tradicional", icon: Gift },
+  { value: "Amigo Chocolate", icon: Candy },
+  { value: "Amigo Oculto", icon: User },
+  { value: "Amigo Ladrão", icon: Mask },
+  { value: "Inimigo Secreto", icon: Skull },
+] as const;
+
 export const participantSchema = z.object({
   name: z.string().min(2, "Nome deve ter pelo menos 2 caracteres").max(50),
 });
 
-// Schema completo para a criação do grupo no frontend
 export const createGroupSchema = z.object({
-  // Passo 1: Info Básica
   name: z
     .string()
     .min(3, "O nome do grupo deve ter pelo menos 3 caracteres")
@@ -25,20 +32,15 @@ export const createGroupSchema = z.object({
     message: "Por favor, selecione uma categoria válida",
   }),
   description: z.string().max(300).optional(),
-
-  // Passo 2: Participantes
   participants: z
     .array(participantSchema)
     .min(3, "Adicione pelo menos 3 participantes para o sorteio"),
-
-  // Passo 3: Admin e Senha (Opcional conforme exemplo)
   adminName: z.string().min(2, "Seu nome é necessário").max(50),
   adminPassword: z
     .string()
     .min(4, "A senha deve ter pelo menos 4 caracteres")
-    .or(z.literal("")), // Permite string vazia se for opcional
+    .or(z.literal("")),
 });
 
-// Tipos derivados dos schemas
 export type ParticipantInput = z.infer<typeof participantSchema>;
 export type CreateGroupInput = z.infer<typeof createGroupSchema>;

@@ -1,21 +1,17 @@
 "use client";
 
-import { GROUP_CATEGORIES } from "@/schemas/groupSchemas";
-import { useState } from "react";
-// Assumindo shadcn/ui components basicos instalados
-import { Button } from "@/components/ui/button";
+import { CATEGORY_OPTIONS } from "@/schemas/groupSchemas";
 import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { ChevronRight } from "lucide-react";
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 interface CategorySelectorProps {
   value?: string;
-  onChange: (category: string) => void;
+  onChange: (category: string | null) => void;
   error?: string;
 }
 
@@ -24,46 +20,33 @@ export function CategorySelector({
   onChange,
   error,
 }: CategorySelectorProps) {
-  const [open, setOpen] = useState(false);
-
-  const handleSelect = (category: string) => {
-    onChange(category);
-    setOpen(false); // Fecha o modal após selecionar
-  };
-
   return (
     <div className="space-y-2">
       <label className="text-sm font-medium">Ocasião do sorteio</label>
-      <Dialog open={open} onOpenChange={setOpen}>
-        <DialogTrigger
-          render={
-            <Button
-              variant="outline"
-              className={`w-full justify-between h-12 text-left font-normal ${error ? "border-red-500" : ""}`}
-            />
-          }
+
+      <Select value={value} onValueChange={onChange}>
+        <SelectTrigger
+          className={`w-full h-12 ${error ? "border-red-500 focus:ring-red-500" : ""}`}
         >
-          {value || "Selecione o tipo de amigo secreto"}
-          <ChevronRight className="ml-2 h-4 w-4 opacity-50" />
-        </DialogTrigger>
-        <DialogContent className="sm:max-w-106.25">
-          <DialogHeader>
-            <DialogTitle>Qual é a ocasião do sorteio?</DialogTitle>
-          </DialogHeader>
-          <div className="grid gap-2 py-4">
-            {GROUP_CATEGORIES.map((category) => (
-              <Button
-                key={category}
-                variant={value === category ? "default" : "outline"}
-                className="justify-start h-12"
-                onClick={() => handleSelect(category)}
-              >
-                {category}
-              </Button>
-            ))}
-          </div>
-        </DialogContent>
-      </Dialog>
+          {/* SelectValue cuida de mostrar o placeholder ou o item selecionado */}
+          <SelectValue placeholder="Selecione o tipo de amigo secreto" />
+        </SelectTrigger>
+
+        <SelectContent>
+          {CATEGORY_OPTIONS.map((option) => {
+            const Icon = option.icon;
+            return (
+              <SelectItem key={option.value} value={option.value}>
+                <div className="flex items-center gap-2">
+                  <Icon className="h-4 w-4 text-primary" />
+                  <span>{option.value}</span>
+                </div>
+              </SelectItem>
+            );
+          })}
+        </SelectContent>
+      </Select>
+
       {error && <p className="text-sm text-red-500">{error}</p>}
     </div>
   );
