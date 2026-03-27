@@ -73,14 +73,12 @@ export function Step3Admin() {
             <Button 
               type="button" 
               variant="outline" 
-              className="w-full sm:w-auto h-12"
               onClick={() => setStep(2)} // Volta para a tela de participantes
             >
               Voltar
             </Button>
             <Button 
               type="submit" 
-              className="w-full sm:w-auto h-12"
             >
               Ir para Revisão
             </Button>

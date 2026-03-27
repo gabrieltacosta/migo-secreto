@@ -64,7 +64,7 @@ export function Step2Participants() {
           onSubmit={addForm.handleSubmit(handleAddParticipant)}
           className="flex gap-2 items-start"
         >
-          <div className="flex-grow">
+          <div className="grow">
             <Input
               {...addForm.register("newParticipantName")}
               placeholder="Nome do participante (ex: João)"

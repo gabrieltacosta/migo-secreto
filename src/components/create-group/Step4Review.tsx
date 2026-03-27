@@ -122,7 +122,6 @@ export function Step4Review() {
           <Button
             onClick={handleCreateGroup}
             disabled={isSubmitting}
-            className="w-full sm:w-auto"
           >
             {isSubmitting ? (
               <>
