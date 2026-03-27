@@ -46,7 +46,7 @@ export function CategorySelector({
           {value || "Selecione o tipo de amigo secreto"}
           <ChevronRight className="ml-2 h-4 w-4 opacity-50" />
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent className="sm:max-w-106.25">
           <DialogHeader>
             <DialogTitle>Qual é a ocasião do sorteio?</DialogTitle>
           </DialogHeader>

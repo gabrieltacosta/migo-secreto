@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { ParticipantList } from "@/components/group/ParticipantList";
+import { ShareGroupLink } from "@/components/group/ShareGroupLink";
 
 interface PageProps {
   params: Promise<{ groupId: string }>;
@@ -30,9 +31,7 @@ export async function generateMetadata({ params }: PageProps) {
 }
 
 // 2. Server Component principal
-export default async function GroupPage({
-  params,
-}: PageProps) {
+export default async function GroupPage({ params }: PageProps) {
   const { groupId } = await params;
   const group = await prisma.group.findUnique({
     where: { id: groupId },
@@ -66,6 +65,7 @@ export default async function GroupPage({
       </header>
 
       <div className="max-w-3xl mx-auto px-4 sm:px-6 mt-8">
+        <ShareGroupLink groupId={group.id} />
         <div className="mb-6 text-center sm:text-left">
           <h2 className="text-lg font-semibold text-gray-800">Quem é você?</h2>
           <p className="text-sm text-gray-500">

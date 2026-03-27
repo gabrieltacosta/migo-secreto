@@ -51,7 +51,7 @@ export function MyGroupsList({ hideOnEmpty = false }: MyGroupsListProps) {
           dispositivo. Que tal começar agora?
         </p>
         <Link href="/groups/new">
-          <Button size="lg" className="rounded-full px-8">
+          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 rounded-full px-8">
             Criar meu primeiro grupo
           </Button>
         </Link>

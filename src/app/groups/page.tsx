@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function GroupsPage() {
   return (
-    <main className="flex-grow flex flex-col font-sans bg-gray-50 min-h-screen pt-12 pb-24">
+    <main className="grow flex flex-col font-sans bg-gray-50 min-h-screen pt-12 pb-24">
       <div className="max-w-4xl mx-auto w-full px-6">
         {/* Cabeçalho da Página */}
         <div className="mb-10 text-center sm:text-left">
