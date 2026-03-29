@@ -4,8 +4,10 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Loader2, Trash2 } from "lucide-react";
 import { deleteGroupAction } from "@/actions/admin.actions";
+import { useTranslations } from "next-intl";
 
 export function DeleteGroupButton({ groupId }: { groupId: string }) {
+  const t = useTranslations("Admin");
   const [isDeleting, setIsDeleting] = useState(false);
   const [confirmStep, setConfirmStep] = useState(false);
 
@@ -14,10 +16,8 @@ export function DeleteGroupButton({ groupId }: { groupId: string }) {
       setConfirmStep(true);
       return;
     }
-
     setIsDeleting(true);
     await deleteGroupAction(groupId);
-    // Se der erro, a Action retorna, mas se der certo ela faz o redirect() direto pro /groups
   };
 
   return (
@@ -29,14 +29,13 @@ export function DeleteGroupButton({ groupId }: { groupId: string }) {
     >
       {isDeleting ? (
         <>
-          <Loader2 className="w-4 h-4 mr-2 animate-spin" /> Excluindo...
+          <Loader2 className="w-4 h-4 mr-2 animate-spin" /> {t("deleting")}
         </>
       ) : confirmStep ? (
-        "Tem certeza? Clique novamente para excluir"
+        t("confirm")
       ) : (
         <>
-          <Trash2 className="w-4 h-4 mr-2 text-red-600" /> Excluir Sorteio
-          Definitivamente
+          <Trash2 className="w-4 h-4 mr-2 text-red-600" /> {t("deleteBtn")}
         </>
       )}
     </Button>

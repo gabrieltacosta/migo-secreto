@@ -1,0 +1,250 @@
+{
+  "Metadata": {
+    "title": "Simple Secret Santa",
+    "description": "Organize your Secret Santa online. No registration, phone, or email required.",
+    "keywords": "secret santa, online draw, secret santa whatsapp"
+  },
+  "Home": {
+    "title": "Secret Santa | Simple Secret Santa in 3 steps",
+    "description": "Organize your Secret Santa online. No registration, phone, or email required.",
+    "ogTitle": "Online Secret Santa Draw",
+    "ogDesc": "Create your group, add friends, and generate the link. Simple, fast, and via WhatsApp."
+  },
+  "Header": {
+    "brand": "Simple Secret Santa",
+    "myGroups": "My Groups",
+    "blog": "Blog",
+    "createGroup": "Create Group",
+    "menu": "Menu"
+  },
+  "Hero": {
+    "titleLine1": "Secret Santa",
+    "titleLine2": "Online",
+    "description": "Organize your Secret Santa online. No registration, phone, or email required. Share your group link for participants to join.",
+    "fillForm": "Fill out the form",
+    "beside": " on the side ",
+    "below": " below ",
+    "disclaimer": "(Note: No app download needed. The website is designed to work well on mobile)"
+  },
+  "Steps": {
+    "overtitle": "Easy to use",
+    "title": "Secret Santa Draw in 3 steps",
+    "subtitle": "No more stress when trying to organize draws",
+    "step1Title": "Create the group",
+    "step1Desc": "To create the group, just choose a name and description. No email or phone required.",
+    "step1Link": "Create group →",
+    "step2Title": "Share the link",
+    "step2Desc": "Upon creating the group, you will receive a link. The link should be shared with participants, it can be via WhatsApp.",
+    "step2Link": "Create group →",
+    "step3Title": "Reveal friend",
+    "step3Desc": "Each participant must open the link, click on their name and choose a password to reveal their secret santa.",
+    "step3Link": "Create group →"
+  },
+  "Testimonials": {
+    "overtitle": "Testimonials",
+    "title": "See what people are saying about Secret Santa",
+    "t1": "Very easy to use, simple, the draw went perfectly.",
+    "n1": "Maíra P.",
+    "t2": "I found it super practical and great for the corporate secret santa.",
+    "n2": "Claudio B.",
+    "t3": "Best secret santa draw site!",
+    "n3": "Guilherme T.",
+    "t4": "Just register details and no email needed. Very practical.",
+    "n4": "Thiago S.",
+    "t5": "100% functional! The only one I managed to use to draw on WhatsApp.",
+    "n5": "Juliana F.",
+    "t6": "Great, even the older people in my family managed to use it.",
+    "n6": "Yumi M."
+  },
+  "Faq": {
+    "title": "Frequently Asked Questions (FAQ)",
+    "subtitle": "If you can't find the answer to your question, contact us at contato@migosecreto.com.",
+    "q1": "How to do secret santa via WhatsApp?",
+    "a1": "When creating a group, a link will be generated. Just click the share via WhatsApp button or copy the link and send it.",
+    "q2": "Can the organizer see who I got?",
+    "a2": "No! Only the person who accesses with the registered password can see who they got.",
+    "q3": "I forgot my link password, now what?",
+    "a3": "At the moment it's not possible to reset the password, the ideal is to create another draw if it's at the beginning of the game.",
+    "q4": "I opened the link for the first time, but it already has a password?",
+    "a4": "Someone entered your name. Ask the organizer to recreate the group or contact the participants."
+  },
+  "Footer": {
+    "brand": "Secret Santa",
+    "description": "Secret Santa - Online Secret Santa",
+    "navTitle": "Navigation",
+    "navWhatsapp": "Secret Santa on WhatsApp",
+    "navCreate": "Create Secret Santa",
+    "navGroups": "My Groups",
+    "linksTitle": "Links",
+    "linkContact": "Contact Us",
+    "linkPrivacy": "Privacy Policy",
+    "catTitle": "Categories",
+    "catChocolate": "Chocolate Santa",
+    "catEaster": "Easter Santa",
+    "rights": "© 2026 Secret Santa. All rights reserved."
+  },
+  "Privacy": {
+    "title": "Privacy Policy",
+    "p1": "Your privacy is important to us. It is Simple Secret Santa's policy to respect your privacy regarding any information we may collect on the Simple Secret Santa website, and other sites we own and operate.",
+    "p2": "We only ask for personal information when we truly need it to provide a service to you. We do it by fair and lawful means, with your knowledge and consent. We also let you know why we're collecting it and how it will be used.",
+    "p3": "We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we'll protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification.",
+    "p4": "We don't share any personally identifying information publicly or with third-parties, except when required to by law.",
+    "p5": "Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies.",
+    "p6": "You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.",
+    "p7": "Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us.",
+    "commitmentTitle": "User Commitment",
+    "commitmentDesc": "The user undertakes to make proper use of the contents and information that Simple Secret Santa offers on the site, including but not limited to:",
+    "l1": "Not engaging in activities that are illegal or contrary to good faith and public order;",
+    "l2": "Not disseminating propaganda or content of a racist, xenophobic, gambling nature, any type of illegal pornography, advocating terrorism or against human rights;",
+    "l3": "Not causing damage to the physical (hardware) and logical (software) systems of Simple Secret Santa, its suppliers or third parties, to introduce or disseminate computer viruses or any other hardware or software systems that are capable of causing the aforementioned damage.",
+    "moreInfoTitle": "More Information",
+    "moreInfoDesc": "You can contact us by email at"
+  },
+  "GroupsPage": {
+    "title": "My Groups | Secret Santa",
+    "description": "Quickly access all Secret Santa draws you manage or participate in.",
+    "h1": "My Groups",
+    "subtitle": "Quickly access the draws you created or are participating in."
+  },
+  "NewGroupPage": {
+    "title": "New Secret Santa",
+    "description": "Create your group, add friends and generate the link. Simple, fast and via WhatsApp."
+  },
+  "MyGroupsList": {
+    "emptyTitle": "No groups around here",
+    "emptyDesc": "You haven't created or participated in any secret santa using this device yet. How about starting now?",
+    "createBtn": "Create my first group",
+    "admin": "Admin",
+    "participant": "Participant",
+    "enterAs": "Enter as"
+  },
+  "HeroForm": {
+    "nameLabel": "Group Name",
+    "namePlaceholder": "Ex: Silva Family, Work Friends",
+    "descLabel": "Description (Optional)",
+    "descPlaceholder": "Ex: Minimum value $50. Reveal on Dec 20.",
+    "submitBtn": "Create secret santa"
+  },
+  "RevealCard": {
+    "overtitle": "You got...",
+    "giftTip": "Gift Tip:",
+    "noTip": "hasn't left any gift tips yet.",
+    "hide": "Hide name",
+    "reveal": "Reveal Name"
+  },
+  "ParticipantList": {
+    "blocked": "Locked",
+    "available": "Available",
+    "hello": "Hello, {name}!",
+    "enterPwd": "Enter your password to log in.",
+    "createPwd": "Create a password of 4 digits or more.",
+    "pwdPlaceholder": "Your secret password",
+    "errorLength": "Password must be at least 4 characters long.",
+    "errorGeneric": "An error occurred.",
+    "accessBtn": "Access Draw"
+  },
+  "GiftSuggestion": {
+    "title": "What do you want to get?",
+    "description": "Leave a tip for whoever got you (sizes, colors, favorite stores).",
+    "placeholder": "Ex: Size 10 shoes, love fiction books, or a nice mug...",
+    "saved": "Saved!",
+    "btnSave": "Save Tip",
+    "btnSaved": "Saved"
+  },
+  "Admin": {
+    "deleting": "Deleting...",
+    "confirm": "Are you sure? Click again to delete",
+    "deleteBtn": "Permanently Delete Draw",
+    "loginTitle": "Restricted Access",
+    "loginDesc": "Enter the admin password you created in step 3 to manage this group.",
+    "pwdPlaceholder": "Admin Password",
+    "loginError": "Error logging in",
+    "loginBtn": "Access Panel"
+  },
+  "CategorySelector": {
+    "label": "Draw Occasion",
+    "placeholder": "Select the type of secret santa"
+  },
+  "Step1": {
+    "title": "Draw Details",
+    "desc": "Let's start by giving it a name and choosing the game type.",
+    "nameLabel": "Group Name",
+    "namePlaceholder": "Ex: Silva Family 2026, Work Team",
+    "descLabel": "Rules or Description (Optional)",
+    "descPlaceholder": "Ex: Minimum gift value is $50. Reveal on Dec 24.",
+    "nextBtn": "Next Step"
+  },
+  "Step2": {
+    "title": "Step 2: Who is participating?",
+    "inputPlaceholder": "Participant name (ex: John)",
+    "listTitle": "Participants List",
+    "emptyList": "No participants added yet.",
+    "minError": "Add at least 3 people.",
+    "backBtn": "Back",
+    "nextBtn": "Next Step: Set Password"
+  },
+  "Step3": {
+    "title": "Group Security",
+    "desc": "Identify yourself as the organizer and create a password to manage this draw in the future.",
+    "nameLabel": "Your Name (Organizer)",
+    "namePlaceholder": "Ex: John (Organizer)",
+    "pwdLabel": "Group Password (Optional)",
+    "pwdPlaceholder": "Create an access password",
+    "warning": "Since we don't use email, this password will be the only way for you (as admin) to delete the group or manage participants after the tab is closed.",
+    "backBtn": "Back",
+    "nextBtn": "Go to Review"
+  },
+  "Step4": {
+    "title": "All set!",
+    "desc": "Review the details before drawing the names.",
+    "groupName": "Group Name:",
+    "category": "Occasion:",
+    "participants": "Participants:",
+    "people": "people",
+    "alert": "After clicking \"Draw Names\", the names will be securely shuffled and the group link will be generated for you to share on WhatsApp!",
+    "errorUnknown": "Unknown error creating group.",
+    "errorServer": "Failed to communicate with server.",
+    "backBtn": "Back and Edit",
+    "drawing": "Drawing...",
+    "submitBtn": "Draw Names Magically"
+  },
+  "ShareGroupLink": {
+    "title": "Group link to share:",
+    "copied": "Copied!",
+    "copyBtn": "Copy Link",
+    "whatsappBtn": "Send on WhatsApp",
+    "whatsappMsg": "Join our Secret Santa! Access the link, click your name, and see who you got:"
+  },
+  "Categories": {
+    "catTraditional": "Traditional Secret Santa",
+    "catChocolate": "Chocolate Santa",
+    "catHidden": "Hidden Friend",
+    "catThief": "White Elephant",
+    "catEnemy": "Secret Enemy"
+  },
+  "GroupPage": {
+    "notFound": "Group not found",
+    "seoTitle": "Draw: {name}",
+    "seoDesc": "You are participating in the {category}! Access to see who you got.",
+    "whoAreYou": "Who are you?",
+    "tapName": "Tap your name to see who you got.",
+    "adminGroup": "Manage Group"
+  },
+  "ParticipantDashboard": {
+    "seoDesc": "Discover everything about {name} on Secret Santa.",
+    "invalidDraw": "Error: Invalid draw.",
+    "hello": "Hello, {name}!",
+    "backToGroup": "Back to group"
+  },
+  "AdminPage": {
+    "seoTitle": "Group Administration",
+    "criticalError": "Critical error: Group ID not found in route.",
+    "backToGroup": "Back to group",
+    "adminPanel": "Admin Panel",
+    "participantStatus": "Participants Status",
+    "of": "of",
+    "accessedDesc": "participants have already accessed and seen who they got.",
+    "dangerZone": "Danger Zone",
+    "dangerDesc": "If someone misspelled a name or if you need to restart the draw, the only way is by deleting this group and creating a new one. This action is irreversible."
+  }
+}

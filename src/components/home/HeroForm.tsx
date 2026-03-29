@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { useRouter } from "@/i18n/routing"; // <-- Usar o router do i18n
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { CategorySelector } from "@/components/create-group/CategorySelector";
+import { useTranslations } from "next-intl";
 
 const step1Schema = createGroupSchema.pick({
   name: true,
@@ -21,6 +22,7 @@ type Step1Input = z.infer<typeof step1Schema>;
 
 export function HeroForm() {
   const router = useRouter();
+  const t = useTranslations("HeroForm");
   const { updateFormData, setStep } = useCreateGroupStore();
 
   const {
@@ -34,11 +36,8 @@ export function HeroForm() {
   });
 
   const onSubmit = (data: Step1Input) => {
-    // Salva os dados no Zustand
     updateFormData(data);
-    // Pula o passo 1 da página /novo-grupo e vai direto para os participantes
     setStep(2);
-    // Redireciona
     router.push("/groups/new");
   };
 
@@ -57,34 +56,31 @@ export function HeroForm() {
               />
             )}
           />
-
           <div className="space-y-1.5">
             <label className="text-sm font-medium text-gray-700">
-              Nome do Grupo
+              {t("nameLabel")}
             </label>
             <Input
               {...register("name")}
-              placeholder="Ex: Família Silva, Amigos do Trabalho"
+              placeholder={t("namePlaceholder")}
               className={`h-12 bg-gray-50 ${errors.name ? "border-red-500" : ""}`}
             />
           </div>
-
           <div className="space-y-1.5">
             <label className="text-sm font-medium text-gray-700">
-              Descrição (Opcional)
+              {t("descLabel")}
             </label>
             <Textarea
               {...register("description")}
-              placeholder="Ex: Valor mínimo R$ 50,00. Revelação dia 20/12."
+              placeholder={t("descPlaceholder")}
               className="resize-none h-24 bg-gray-50"
             />
           </div>
-
           <Button
             type="submit"
             className="w-full h-12 text-lg font-bold bg-blue-600 hover:bg-blue-700"
           >
-            Criar amigo secreto
+            {t("submitBtn")}
           </Button>
         </form>
       </CardContent>

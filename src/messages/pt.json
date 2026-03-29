@@ -1,0 +1,250 @@
+{
+  "Metadata": {
+    "title": "Amigo Secreto Simples",
+    "description": "Organize seu Amigo Secreto online. Sem cadastro, telefone ou e-mail.",
+    "keywords": "amigo secreto, sorteio online, amigo oculto whatsapp"
+  },
+  "Home": {
+    "title": "Amigo Secreto | Amigo Secreto Simples em 3 passos",
+    "description": "Organize seu Amigo Secreto online. Não é necessário cadastro, nem telefone, nem e-mail.",
+    "ogTitle": "Sorteio de Amigo Secreto Online",
+    "ogDesc": "Crie seu grupo, adicione os amigos e gere o link. Simples, rápido e pelo WhatsApp."
+  },
+  "Header": {
+    "brand": "Amigo Secreto Simples",
+    "myGroups": "Meus Grupos",
+    "blog": "Blog",
+    "createGroup": "Criar Grupo",
+    "menu": "Menu"
+  },
+  "Hero": {
+    "titleLine1": "Amigo Secreto",
+    "titleLine2": "Online",
+    "description": "Organize seu Amigo Secreto online. Não é necessário cadastro, nem telefone, nem e-mail. Compartilhe o link do seu grupo para os participantes entrarem.",
+    "fillForm": "Preencha o formulário",
+    "beside": " ao lado ",
+    "below": " abaixo ",
+    "disclaimer": "(Obs.: Não é necessário baixar o app. O site foi feito para funcionar bem no celular)"
+  },
+  "Steps": {
+    "overtitle": "Fácil de usar",
+    "title": "Sorteio de Amigo Secreto em 3 passos",
+    "subtitle": "Chega de estresse ao tentar organizar sorteios",
+    "step1Title": "Criar o grupo",
+    "step1Desc": "Para criar o grupo, basta escolher um nome e descrição. Não é necessário e-mail e nem telefone.",
+    "step1Link": "Criar grupo →",
+    "step2Title": "Compartilhar o link",
+    "step2Desc": "Ao criar o grupo, você receberá um link. O link deve ser compartilhado com os participantes, pode ser por WhatsApp.",
+    "step2Link": "Criar grupo →",
+    "step3Title": "Revelar amigo",
+    "step3Desc": "Cada participante deve entrar no link, clicar em seu nome e escolher uma senha para revelar seu amigo secreto.",
+    "step3Link": "Criar grupo →"
+  },
+  "Testimonials": {
+    "overtitle": "Testemunhos",
+    "title": "Veja o que estão falando sobre o Amigo Secreto",
+    "t1": "Muito fácil de usar, simples, sorteio deu super certo.",
+    "n1": "Maíra P.",
+    "t2": "Achei super prático e ótimo para usar no amigo oculto corporativo.",
+    "n2": "Claudio B.",
+    "t3": "Melhor site de sorteio de amigo secreto!",
+    "n3": "Guilherme T.",
+    "t4": "Só cadastrar detalhes e não precisa de e-mail. Muito prático.",
+    "n4": "Thiago S.",
+    "t5": "Funcionalidade 100%! O único que consegui usar para sortear no WhatsApp",
+    "n5": "Juliana F.",
+    "t6": "Ótimo, até mesmo as pessoas mais velhas da minha família conseguiram usar.",
+    "n6": "Yumi M."
+  },
+  "Faq": {
+    "title": "Perguntas frequentes (FAQ)",
+    "subtitle": "Caso você não ache a resposta para sua dúvida, entre em contato através do e-mail contato@migosecreto.com.",
+    "q1": "Como fazer amigo secreto por whatsapp?",
+    "a1": "Ao criar um grupo, será gerado um link. Basta clicar no botão de compartilhar via WhatsApp ou copiar o link e enviar.",
+    "q2": "É possível o organizador ver quem eu tirei?",
+    "a2": "Não! Apenas quem acessa com a senha registrada consegue ver quem tirou.",
+    "q3": "Esqueci a senha do meu link, e agora?",
+    "a3": "No momento não é possível resetar a senha, o ideal é criar outro sorteio se for no início da brincadeira.",
+    "q4": "Abri o link pela primeira vez, mas já tem senha?",
+    "a4": "Alguém entrou no seu nome. Peça ao organizador para recriar o grupo ou entre em contato com os participantes."
+  },
+  "Footer": {
+    "brand": "Amigo Secreto Simples",
+    "description": "Amigo Secreto Online - Organize seu Amigo Secreto online. Sem cadastro, telefone ou e-mail.",
+    "navTitle": "Navegação",
+    "navWhatsapp": "Amigo Secreto no WhatsApp",
+    "navCreate": "Criar Amigo Secreto",
+    "navGroups": "Meus Grupos",
+    "linksTitle": "Links",
+    "linkContact": "Entre em contato",
+    "linkPrivacy": "Privacidade",
+    "catTitle": "Categorias",
+    "catChocolate": "Amigo Chocolate",
+    "catEaster": "Amigo Páscoa",
+    "rights": "© 2026 Amigo Secreto Simples. Todos os direitos reservados."
+  },
+  "Privacy": {
+    "title": "Política de Privacidade",
+    "p1": "A sua privacidade é importante para nós. É política do Amigo Secreto Simples respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site Amigo Secreto Simples, e outros sites e apps que possuímos e operamos.",
+    "p2": "Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.",
+    "p3": "Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.",
+    "p4": "Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.",
+    "p5": "O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade por suas respectivas políticas de privacidade.",
+    "p6": "Você é livre para recusar a nossa solicitação de informações pessoais, entendendo que talvez não possamos fornecer alguns dos serviços desejados.",
+    "p7": "O uso continuado de nosso site será considerado como aceitação de nossas práticas em torno de privacidade e informações pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do usuário e informações pessoais, entre em contacto connosco.",
+    "commitmentTitle": "Compromisso do Usuário",
+    "commitmentDesc": "O usuário se compromete a fazer uso adequado dos conteúdos e da informação que o Amigo Secreto Simples oferece no site e com caráter enunciativo, mas não limitativo:",
+    "l1": "Não se envolver em atividades que sejam ilegais ou contrárias à boa fé a à ordem pública;",
+    "l2": "Não difundir propaganda ou conteúdo de natureza racista, xenofóbica ou azar, qualquer tipo de pornografia ilegal, de apologia ao terrorismo ou contra os direitos humanos;",
+    "l3": "Não causar danos aos sistemas físicos (hardwares) e lógicos (softwares) do Amigo Secreto Simples, de seus fornecedores ou terceiros, para introduzir ou disseminar vírus informáticos ou quaisquer outros sistemas de hardware ou software que sejam capazes de causar danos anteriormente mencionados.",
+    "moreInfoTitle": "Mais Informações",
+    "moreInfoDesc": "Você pode entrar em contato conosco através do e-mail"
+  },
+  "GroupsPage": {
+    "title": "Meus Grupos | Amigo Secreto",
+    "description": "Acesse rapidamente todos os sorteios de Amigo Secreto que você gerencia ou participa.",
+    "h1": "Meus Grupos",
+    "subtitle": "Acesse rapidamente os sorteios que você criou ou está participando."
+  },
+  "NewGroupPage": {
+    "title": "Novo Amigo Secreto",
+    "description": "Crie seu grupo, adicione os amigos e gere o link. Simples, rápido e pelo WhatsApp."
+  },
+  "MyGroupsList": {
+    "emptyTitle": "Nenhum grupo por aqui",
+    "emptyDesc": "Você ainda não criou ou participou de nenhum amigo secreto usando este dispositivo. Que tal começar agora?",
+    "createBtn": "Criar meu primeiro grupo",
+    "admin": "Administrador",
+    "participant": "Participante",
+    "enterAs": "Entrar como"
+  },
+  "HeroForm": {
+    "nameLabel": "Nome do Grupo",
+    "namePlaceholder": "Ex: Família Silva, Amigos do Trabalho",
+    "descLabel": "Descrição (Opcional)",
+    "descPlaceholder": "Ex: Valor mínimo R$ 50,00. Revelação dia 20/12.",
+    "submitBtn": "Criar amigo secreto"
+  },
+  "RevealCard": {
+    "overtitle": "Você tirou...",
+    "giftTip": "Dica de Presente:",
+    "noTip": "ainda não deixou dicas de presente.",
+    "hide": "Esconder nome",
+    "reveal": "Revelar Nome"
+  },
+  "ParticipantList": {
+    "blocked": "Bloqueado",
+    "available": "Disponível",
+    "hello": "Olá, {name}!",
+    "enterPwd": "Digite sua senha para entrar.",
+    "createPwd": "Crie uma senha de 4 dígitos ou mais.",
+    "pwdPlaceholder": "Sua senha secreta",
+    "errorLength": "A senha deve ter pelo menos 4 caracteres.",
+    "errorGeneric": "Ocorreu um erro.",
+    "accessBtn": "Acessar Sorteio"
+  },
+  "GiftSuggestion": {
+    "title": "O que você quer ganhar?",
+    "description": "Deixe uma dica para quem tirou você (tamanhos, cores, lojas favoritas).",
+    "placeholder": "Ex: Calço 40, adoro livros de ficção, ou uma caneca bonita...",
+    "saved": "Salvo!",
+    "btnSave": "Salvar Dica",
+    "btnSaved": "Salvo"
+  },
+  "Admin": {
+    "deleting": "Excluindo...",
+    "confirm": "Tem certeza? Clique novamente para excluir",
+    "deleteBtn": "Excluir Sorteio Definitivamente",
+    "loginTitle": "Acesso Restrito",
+    "loginDesc": "Insira a senha de administrador que você criou no passo 3 para gerenciar este grupo.",
+    "pwdPlaceholder": "Senha de Admin",
+    "loginError": "Erro ao logar",
+    "loginBtn": "Acessar Painel"
+  },
+  "CategorySelector": {
+    "label": "Ocasião do sorteio",
+    "placeholder": "Selecione o tipo de amigo secreto"
+  },
+  "Step1": {
+    "title": "Detalhes do Sorteio",
+    "desc": "Vamos começar dando um nome e escolhendo o tipo da brincadeira.",
+    "nameLabel": "Nome do Grupo",
+    "namePlaceholder": "Ex: Família Silva 2026, Turma da Firma",
+    "descLabel": "Regras ou Descrição (Opcional)",
+    "descPlaceholder": "Ex: Valor mínimo do presente é R$ 50,00. A revelação será dia 24/12.",
+    "nextBtn": "Próximo Passo"
+  },
+  "Step2": {
+    "title": "Passo 2: Quem vai participar?",
+    "inputPlaceholder": "Nome do participante (ex: João)",
+    "listTitle": "Lista de Participantes",
+    "emptyList": "Nenhum participante adicionado ainda.",
+    "minError": "Adicione pelo menos 3 pessoas.",
+    "backBtn": "Voltar",
+    "nextBtn": "Próximo Passo: Definir Senha"
+  },
+  "Step3": {
+    "title": "Segurança do Grupo",
+    "desc": "Identifique-se como organizador e crie uma senha para gerenciar este sorteio no futuro.",
+    "nameLabel": "Seu Nome (Organizador)",
+    "namePlaceholder": "Ex: João (Organizador)",
+    "pwdLabel": "Senha do Grupo (Opcional)",
+    "pwdPlaceholder": "Crie uma senha de acesso",
+    "warning": "Como não usamos e-mail, essa senha será a única forma de você (como administrador) excluir o grupo ou gerenciar participantes depois que a aba for fechada.",
+    "backBtn": "Voltar",
+    "nextBtn": "Ir para Revisão"
+  },
+  "Step4": {
+    "title": "Tudo pronto!",
+    "desc": "Revise os dados antes de sortear os nomes.",
+    "groupName": "Nome do Grupo:",
+    "category": "Ocasião:",
+    "participants": "Participantes:",
+    "people": "pessoas",
+    "alert": "Após clicar em \"Realizar Sorteio\", os nomes serão embaralhados de forma segura e o link do grupo será gerado para você compartilhar no WhatsApp!",
+    "errorUnknown": "Erro desconhecido ao criar o grupo.",
+    "errorServer": "Falha na comunicação com o servidor.",
+    "backBtn": "Voltar e Editar",
+    "drawing": "Sorteando...",
+    "submitBtn": "Realizar Sorteio Mágico"
+  },
+  "ShareGroupLink": {
+    "title": "Link do grupo para compartilhar:",
+    "copied": "Copiado!",
+    "copyBtn": "Copiar Link",
+    "whatsappBtn": "Enviar no WhatsApp",
+    "whatsappMsg": "Participe do nosso Amigo Secreto! Acesse o link, clique no seu nome e veja quem você tirou:"
+  },
+  "Categories": {
+    "catTraditional": "Amigo Secreto Tradicional",
+    "catChocolate": "Amigo Chocolate",
+    "catHidden": "Amigo Oculto",
+    "catThief": "Amigo Ladrão",
+    "catEnemy": "Inimigo Secreto"
+  },
+  "GroupPage": {
+    "notFound": "Grupo não encontrado",
+    "seoTitle": "Sorteio: {name}",
+    "seoDesc": "Você está participando do {category}! Acesse para ver quem você tirou.",
+    "whoAreYou": "Quem é você?",
+    "tapName": "Toque no seu nome para ver quem você tirou.",
+    "adminGroup": "Administrar Grupo"
+  },
+  "ParticipantDashboard": {
+    "seoDesc": "Descubra tudo sobre {name} no Amigo Secreto.",
+    "invalidDraw": "Erro: Sorteio inválido.",
+    "hello": "Olá, {name}!",
+    "backToGroup": "Voltar para o grupo"
+  },
+  "AdminPage": {
+    "seoTitle": "Administração do Grupo",
+    "criticalError": "Erro crítico: ID do grupo não encontrado na rota.",
+    "backToGroup": "Voltar para o grupo",
+    "adminPanel": "Painel Admin",
+    "participantStatus": "Status dos Participantes",
+    "of": "de",
+    "accessedDesc": "participantes já acessaram e viram quem tiraram.",
+    "dangerZone": "Zona de Perigo",
+    "dangerDesc": "Se alguém escreveu o nome errado ou se você precisa recomeçar o sorteio, a única forma é excluindo este grupo e criando um novo. Esta ação é irreversível."
+  }
+}

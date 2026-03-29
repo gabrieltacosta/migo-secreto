@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "@/i18n/routing"; // <-- Importe do i18n
 import { useCreateGroupStore } from "@/store/useCreateGroupStore";
 import { createGroupAndDraw } from "@/actions/group.actions";
 import { CreateGroupInput } from "@/schemas/groupSchemas";
@@ -14,9 +14,11 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import { Loader2, CheckCircle2 } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export function Step4Review() {
   const router = useRouter();
+  const t = useTranslations("Step4");
   const { formData, setStep, reset } = useCreateGroupStore();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -26,31 +28,24 @@ export function Step4Review() {
     setError(null);
 
     try {
-      // 1. Dispara a Server Action passando os dados do Zustand
       const response = await createGroupAndDraw(formData as CreateGroupInput);
 
       if (!response.success || !response.groupId) {
-        throw new Error(
-          response.error || "Erro desconhecido ao criar o grupo.",
-        );
+        throw new Error(response.error || t("errorUnknown"));
       }
 
-      // 2. Salva o acesso de 'Admin' no localStorage para a página "Meus Grupos"
       saveToLocalStorage(response.groupId, formData.name as string);
-
-      // 3. Limpa o Zustand para não vazar dados se ele for criar outro grupo depois
-      reset();
-
-      // 4. Redireciona o usuário para a página do grupo recém-criado
-      router.push(`/groups/${response.groupId}`);
+      router.push(`/groups/${response.groupId}`); // Preserva idioma automaticamente
+      setTimeout(() => {
+        reset();
+      }, 1000);
     } catch (err) {
       console.error(err);
-      setError("Falha na comunicação com o servidor.");
+      setError(t("errorServer"));
       setIsSubmitting(false);
     }
   };
 
-  // Helper para salvar o grupo no localStorage
   const saveToLocalStorage = (groupId: string, groupName: string) => {
     const storageKey = "@amigo-secreto:my-groups";
     const existingGroups = JSON.parse(localStorage.getItem(storageKey) || "[]");
@@ -58,10 +53,9 @@ export function Step4Review() {
     const newGroup = {
       id: groupId,
       name: groupName,
-      role: "admin", // Ele é o criador, logo é admin
+      role: "admin",
       createdAt: new Date().toISOString(),
     };
-
     localStorage.setItem(
       storageKey,
       JSON.stringify([...existingGroups, newGroup]),
@@ -71,36 +65,30 @@ export function Step4Review() {
   return (
     <Card className="max-w-2xl mx-auto">
       <CardHeader>
-        <CardTitle>Tudo pronto!</CardTitle>
-        <CardDescription>
-          Revise os dados antes de sortear os nomes.
-        </CardDescription>
+        <CardTitle>{t("title")}</CardTitle>
+        <CardDescription>{t("desc")}</CardDescription>
       </CardHeader>
       <CardContent className="space-y-6">
         <div className="bg-secondary/30 p-4 rounded-lg space-y-3">
           <div className="flex justify-between border-b pb-2">
-            <span className="text-muted-foreground">Nome do Grupo:</span>
+            <span className="text-muted-foreground">{t("groupName")}</span>
             <span className="font-semibold">{formData.name}</span>
           </div>
           <div className="flex justify-between border-b pb-2">
-            <span className="text-muted-foreground">Ocasião:</span>
+            <span className="text-muted-foreground">{t("category")}</span>
             <span className="font-semibold">{formData.category}</span>
           </div>
           <div className="flex justify-between">
-            <span className="text-muted-foreground">Participantes:</span>
+            <span className="text-muted-foreground">{t("participants")}</span>
             <span className="font-semibold">
-              {formData.participants?.length} pessoas
+              {formData.participants?.length} {t("people")}
             </span>
           </div>
         </div>
 
         <div className="bg-green-50 text-green-800 p-4 rounded-lg flex items-start gap-3 border border-green-200">
           <CheckCircle2 className="h-5 w-5 mt-0.5" />
-          <p className="text-sm">
-            Após clicar em &quot;Realizar Sorteio&quot;, os nomes serão
-            embaralhados de forma segura e o link do grupo será gerado para você
-            compartilhar no WhatsApp!
-          </p>
+          <p className="text-sm">{t("alert")}</p>
         </div>
 
         {error && (
@@ -113,23 +101,18 @@ export function Step4Review() {
           <Button
             type="button"
             variant="outline"
-            onClick={() => setStep(3)} // Volta para o passo da senha
+            onClick={() => setStep(3)}
             disabled={isSubmitting}
           >
-            Voltar e Editar
+            {t("backBtn")}
           </Button>
-
-          <Button
-            onClick={handleCreateGroup}
-            disabled={isSubmitting}
-          >
+          <Button onClick={handleCreateGroup} disabled={isSubmitting}>
             {isSubmitting ? (
               <>
-                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                Sorteando...
+                <Loader2 className="mr-2 h-4 w-4 animate-spin" /> {t("drawing")}
               </>
             ) : (
-              "Realizar Sorteio Mágico"
+              t("submitBtn")
             )}
           </Button>
         </div>

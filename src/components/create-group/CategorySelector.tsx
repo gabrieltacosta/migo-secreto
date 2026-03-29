@@ -8,6 +8,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { useTranslations } from "next-intl";
 
 interface CategorySelectorProps {
   value?: string;
@@ -20,16 +21,18 @@ export function CategorySelector({
   onChange,
   error,
 }: CategorySelectorProps) {
+  const tSel = useTranslations("CategorySelector"); // Usa as traduções que fizemos nos passos anteriores
+  const tCat = useTranslations("Categories"); // Busca as categorias dinâmicas
+
   return (
     <div className="space-y-2">
-      <label className="text-sm font-medium">Ocasião do sorteio</label>
+      <label className="text-sm font-medium">{tSel("label")}</label>
 
-      <Select value={value} onValueChange={onChange}>
+      <Select value={value || ""} onValueChange={onChange}>
         <SelectTrigger
           className={`w-full h-12 ${error ? "border-red-500 focus:ring-red-500" : ""}`}
         >
-          {/* SelectValue cuida de mostrar o placeholder ou o item selecionado */}
-          <SelectValue placeholder="Selecione o tipo de amigo secreto" />
+          <SelectValue placeholder={tSel("placeholder")} />
         </SelectTrigger>
 
         <SelectContent>
@@ -39,7 +42,8 @@ export function CategorySelector({
               <SelectItem key={option.value} value={option.value}>
                 <div className="flex items-center gap-2">
                   <Icon className="h-4 w-4 text-primary" />
-                  <span>{option.value}</span>
+                  {/* Puxa a tradução usando a chave que está no objeto */}
+                  <span>{tCat(option.translationKey)}</span>
                 </div>
               </SelectItem>
             );

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "@/i18n/routing";
 import {
   Card,
   CardContent,
@@ -13,9 +13,11 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Loader2, Lock } from "lucide-react";
 import { loginAdmin } from "@/actions/admin.actions";
+import { useTranslations } from "next-intl";
 
 export function AdminLoginForm({ groupId }: { groupId: string }) {
   const router = useRouter();
+  const t = useTranslations("Admin");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -24,12 +26,11 @@ export function AdminLoginForm({ groupId }: { groupId: string }) {
     e.preventDefault();
     setIsLoading(true);
     setError("");
-
     const res = await loginAdmin(groupId, password);
     if (res.success) {
-      router.refresh(); // Recarrega a página para o Server Component ler o novo cookie
+      router.refresh();
     } else {
-      setError(res.error || "Erro ao logar");
+      setError(res.error || t("loginError"));
       setIsLoading(false);
     }
   };
@@ -40,17 +41,14 @@ export function AdminLoginForm({ groupId }: { groupId: string }) {
         <div className="mx-auto bg-blue-100 p-3 rounded-full w-fit mb-2">
           <Lock className="w-6 h-6 text-blue-600" />
         </div>
-        <CardTitle>Acesso Restrito</CardTitle>
-        <CardDescription>
-          Insira a senha de administrador que você criou no passo 3 para
-          gerenciar este grupo.
-        </CardDescription>
+        <CardTitle>{t("loginTitle")}</CardTitle>
+        <CardDescription>{t("loginDesc")}</CardDescription>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-4">
           <Input
             type="password"
-            placeholder="Senha de Admin"
+            placeholder={t("pwdPlaceholder")}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             className="h-12"
@@ -60,7 +58,7 @@ export function AdminLoginForm({ groupId }: { groupId: string }) {
             {isLoading ? (
               <Loader2 className="w-5 h-5 animate-spin" />
             ) : (
-              "Acessar Painel"
+              t("loginBtn")
             )}
           </Button>
         </form>

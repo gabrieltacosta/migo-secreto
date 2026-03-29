@@ -1,6 +1,6 @@
 "use client";
 
-import { useForm, Controller } from "react-hook-form"; // <-- Importe o Controller
+import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useCreateGroupStore } from "@/store/useCreateGroupStore";
@@ -16,6 +16,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { CategorySelector } from "./CategorySelector";
+import { useTranslations } from "next-intl";
 
 const step1Schema = createGroupSchema.pick({
   name: true,
@@ -25,9 +26,9 @@ const step1Schema = createGroupSchema.pick({
 type Step1Input = z.infer<typeof step1Schema>;
 
 export function Step1BasicInfo() {
+  const t = useTranslations("Step1");
   const { formData, updateFormData, setStep } = useCreateGroupStore();
 
-  // Substitua o watch e setValue pelo control
   const {
     register,
     handleSubmit,
@@ -50,18 +51,16 @@ export function Step1BasicInfo() {
   return (
     <Card className="max-w-2xl mx-auto shadow-md">
       <CardHeader>
-        <CardTitle>Detalhes do Sorteio</CardTitle>
-        <CardDescription>
-          Vamos começar dando um nome e escolhendo o tipo da brincadeira.
-        </CardDescription>
+        <CardTitle>{t("title")}</CardTitle>
+        <CardDescription>{t("desc")}</CardDescription>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
           <div className="space-y-2">
-            <label className="text-sm font-medium">Nome do Grupo</label>
+            <label className="text-sm font-medium">{t("nameLabel")}</label>
             <Input
               {...register("name")}
-              placeholder="Ex: Família Silva 2026, Turma da Firma"
+              placeholder={t("namePlaceholder")}
               className={`h-12 ${errors.name ? "border-red-500" : ""}`}
             />
             {errors.name && (
@@ -69,33 +68,30 @@ export function Step1BasicInfo() {
             )}
           </div>
 
-          {/* O Pulo do Gato: Envelopamos o CategorySelector no Controller */}
           <Controller
             name="category"
             control={control}
             render={({ field }) => (
               <CategorySelector
                 value={field.value}
-                onChange={field.onChange} // O Controller gerencia o setValue automaticamente aqui
+                onChange={field.onChange}
                 error={errors.category?.message}
               />
             )}
           />
 
           <div className="space-y-2">
-            <label className="text-sm font-medium">
-              Regras ou Descrição (Opcional)
-            </label>
+            <label className="text-sm font-medium">{t("descLabel")}</label>
             <Textarea
               {...register("description")}
-              placeholder="Ex: Valor mínimo do presente é R$ 50,00. A revelação será dia 24/12."
+              placeholder={t("descPlaceholder")}
               className="resize-none h-24"
             />
           </div>
 
           <div className="flex justify-end pt-4 border-t">
             <Button type="submit" className="w-full sm:w-auto">
-              Próximo Passo
+              {t("nextBtn")}
             </Button>
           </div>
         </form>

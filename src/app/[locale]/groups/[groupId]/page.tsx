@@ -2,60 +2,63 @@ import { notFound } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { ParticipantList } from "@/components/group/ParticipantList";
 import { ShareGroupLink } from "@/components/group/ShareGroupLink";
-import Link from "next/link";
+import { Link } from "@/i18n/routing"; // <-- Link customizado do i18n
 import { Settings } from "lucide-react";
+import { getTranslations } from "next-intl/server"; // <-- Tradução no Servidor
 
+// Adicionamos o locale na tipagem dos parâmetros
 interface PageProps {
-  params: Promise<{ groupId: string }>;
+  params: Promise<{ groupId: string; locale: string }>;
 }
 
-// 1. SEO Dinâmico: Gera o card bonitão quando o link é colado no WhatsApp
 export async function generateMetadata({ params }: PageProps) {
-  const { groupId } = await params;
+  const { groupId, locale } = await params;
+  const t = await getTranslations({ locale, namespace: "GroupPage" });
 
   const group = await prisma.group.findUnique({
     where: { id: groupId },
     select: { name: true, category: true },
   });
 
-  if (!group) return { title: "Grupo não encontrado" };
+  if (!group) return { title: t("notFound") };
+
+  // Tradução do banco dinâmica: se "category" é uma string não traduzida,
+  // no ambiente real você pode cruzar com tCat("catTraditional") se quiser.
+  const title = t("seoTitle", { name: group.name });
+  const desc = t("seoDesc", { category: group.category });
 
   return {
-    title: `Sorteio: ${group.name}`,
-    description: `Você está participando do ${group.category}! Acesse para ver quem você tirou.`,
+    title: title,
+    description: desc,
     openGraph: {
-      title: `Sorteio: ${group.name}`,
-      description: `Você está participando do ${group.category}! Acesse para ver quem você tirou.`,
-      // Aqui você colocaria a URL de uma imagem padrão bonitinha do seu sistema
+      title: title,
+      description: desc,
       images: ["/gift1.png"],
     },
   };
 }
 
-// 2. Server Component principal
 export default async function GroupPage({ params }: PageProps) {
-  const { groupId } = await params;
+  const { groupId, locale } = await params;
+  const t = await getTranslations({ locale, namespace: "GroupPage" });
+
   const group = await prisma.group.findUnique({
     where: { id: groupId },
     include: {
-      participants: {
-        orderBy: { name: "asc" }, // Ordem alfabética facilita achar o nome no celular
-      },
+      participants: { orderBy: { name: "asc" } },
     },
   });
 
-  if (!group) notFound(); // Mostra a página 404 padrão do Next.js
+  if (!group) notFound();
 
-  // Removemos dados sensíveis antes de mandar pro Client Component
   const safeParticipants = group.participants.map((p) => ({
     id: p.id,
     name: p.name,
-    isClaimed: !!p.passwordHash, // Só manda um boolean avisando se já tem dono
+    isClaimed: !!p.passwordHash,
   }));
 
   return (
     <main className="min-h-screen bg-gray-50 pb-20">
-      {/* Header Mobile-First: Padding responsivo, texto centralizado no mobile */}
       <header className="bg-[#0f172a] text-primary-foreground py-8 px-4 sm:px-6 md:py-12 text-center shadow-sm">
         <h1 className="text-2xl md:text-4xl font-bold mb-2">{group.name}</h1>
         <p className="text-sm md:text-base opacity-90">{group.category}</p>
@@ -69,13 +72,12 @@ export default async function GroupPage({ params }: PageProps) {
       <div className="max-w-3xl mx-auto px-4 sm:px-6 mt-8">
         <ShareGroupLink groupId={group.id} />
         <div className="mb-6 text-center sm:text-left">
-          <h2 className="text-lg font-semibold text-gray-800">Quem é você?</h2>
-          <p className="text-sm text-gray-500">
-            Toque no seu nome para ver quem você tirou.
-          </p>
+          <h2 className="text-lg font-semibold text-gray-800">
+            {t("whoAreYou")}
+          </h2>
+          <p className="text-sm text-gray-500">{t("tapName")}</p>
         </div>
 
-        {/* Passamos a lista segura para o componente interativo */}
         <ParticipantList participants={safeParticipants} groupId={group.id} />
       </div>
       <div className="mt-16 text-center pb-8">
@@ -83,7 +85,7 @@ export default async function GroupPage({ params }: PageProps) {
           href={`/groups/${group.id}/admin`}
           className="text-sm text-gray-400 hover:text-gray-600 flex items-center justify-center gap-2"
         >
-          <Settings className="w-4 h-4" /> Administrar Grupo
+          <Settings className="w-4 h-4" /> {t("adminGroup")}
         </Link>
       </div>
     </main>

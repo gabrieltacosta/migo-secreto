@@ -1,19 +1,21 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import { Link } from "@/i18n/routing"; // <-- Alterado
 import { Card, CardContent } from "@/components/ui/card";
 import { ChevronRight, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslations } from "next-intl"; // <-- Alterado
 
 type SavedGroup = { id: string; name: string; role: string; createdAt: string };
 
-interface MyGroupsListProps {
+export function MyGroupsList({
+  hideOnEmpty = false,
+}: {
   hideOnEmpty?: boolean;
-}
-
-export function MyGroupsList({ hideOnEmpty = false }: MyGroupsListProps) {
+}) {
   const [groups, setGroups] = useState<SavedGroup[] | null>(null);
+  const t = useTranslations("MyGroupsList");
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -21,8 +23,7 @@ export function MyGroupsList({ hideOnEmpty = false }: MyGroupsListProps) {
       if (stored) {
         try {
           setGroups(JSON.parse(stored) as SavedGroup[]);
-        } catch (error) {
-          console.error("Erro ao ler meus-grupos do localStorage:", error);
+        } catch {
           setGroups([]);
         }
       } else {
@@ -32,37 +33,29 @@ export function MyGroupsList({ hideOnEmpty = false }: MyGroupsListProps) {
     return () => clearTimeout(timer);
   }, []);
 
-  // 1. Enquanto hidrata, não renderiza nada
   if (!groups) return null;
 
-  // 2. Comportamento se a lista estiver vazia
   if (groups.length === 0) {
-    if (hideOnEmpty) return null; // Na Home, fica invisível
-
-    // Na página /groups, mostra isso:
+    if (hideOnEmpty) return null;
     return (
       <div className="text-center py-16 px-4 border-2 border-dashed rounded-2xl border-gray-200 bg-gray-50/50">
         <Users className="w-12 h-12 text-gray-300 mx-auto mb-4" />
         <h3 className="text-xl font-bold text-gray-900 mb-2">
-          Nenhum grupo por aqui
+          {t("emptyTitle")}
         </h3>
-        <p className="text-gray-500 mb-8 max-w-md mx-auto">
-          Você ainda não criou ou participou de nenhum amigo secreto usando este
-          dispositivo. Que tal começar agora?
-        </p>
+        <p className="text-gray-500 mb-8 max-w-md mx-auto">{t("emptyDesc")}</p>
         <Link href="/groups/new">
           <Button
             size="lg"
             className="bg-blue-600 hover:bg-blue-700 rounded-full px-8"
           >
-            Criar meu primeiro grupo
+            {t("createBtn")}
           </Button>
         </Link>
       </div>
     );
   }
 
-  // 3. Renderiza a lista se houver grupos
   return (
     <div className="space-y-6">
       <div className="grid gap-4">
@@ -79,10 +72,8 @@ export function MyGroupsList({ hideOnEmpty = false }: MyGroupsListProps) {
                       {group.name}
                     </h3>
                     <p className="text-sm text-gray-500">
-                      Entrar como{" "}
-                      {group.role === "admin"
-                        ? "Administrador"
-                        : "Participante"}
+                      {t("enterAs")}{" "}
+                      {group.role === "admin" ? t("admin") : t("participant")}
                     </p>
                   </div>
                 </div>

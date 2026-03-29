@@ -7,8 +7,24 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
-      allow: ["/", "/groups/new"],
-      disallow: ["/cdn-cgi/", "/_app/", "/api/", "/groups/"],
+      // Permite a raiz e a criação de grupos em todos os idiomas
+      allow: [
+        "/",
+        "/groups/new",
+        "/en/groups/new",
+        "/es/groups/new",
+        "/blog",
+        "/en/blog",
+        "/es/blog",
+      ],
+      // Bloqueia a indexação de grupos criados por usuários em qualquer idioma
+      disallow: [
+        "/api/",
+        "/_next/",
+        "/groups/",
+        "/en/groups/",
+        "/es/groups/", // Bloqueia o acesso a /groups/[id]
+      ],
     },
     sitemap: `${siteUrl}/sitemap.xml`,
   };
