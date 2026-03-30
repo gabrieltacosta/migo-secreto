@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Copy, Check, MessageCircle } from "lucide-react";
+import { Copy, Check } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 import { useTranslations } from "next-intl"; // <-- Importe o hook
 
 interface ShareGroupLinkProps {
@@ -64,7 +65,7 @@ export function ShareGroupLink({ groupId }: ShareGroupLinkProps) {
           onClick={handleWhatsAppShare}
           className="flex-1 h-12 text-sm p-2 font-semibold bg-[#25D366] hover:bg-[#20bd5a] text-white transition-colors"
         >
-          <MessageCircle className="w-5 h-5 mr-2" />
+          <FaWhatsapp className="w-5 h-5 mr-2" />
           {t("whatsappBtn")}
         </Button>
       </div>

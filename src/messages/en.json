@@ -246,5 +246,51 @@
     "accessedDesc": "participants have already accessed and seen who they got.",
     "dangerZone": "Danger Zone",
     "dangerDesc": "If someone misspelled a name or if you need to restart the draw, the only way is by deleting this group and creating a new one. This action is irreversible."
+  },
+  "Blog": {
+    "title": "Secret Santa Blog",
+    "subtitle": "Tips, ideas, and news to organize the perfect draw.",
+    "readMore": "Read article",
+    "p1Title": "5 Tips to nail your Secret Santa gift",
+    "p1Desc": "Discover how to choose the ideal gift even if you got that coworker you barely know.",
+    "p1Date": "January 15, 2026",
+    "p2Title": "How to organize a remote Secret Santa",
+    "p2Desc": "Learn how to do the draw and reveal via video call with long-distance friends and family.",
+    "p2Date": "February 22, 2026",
+    "p3Title": "3 Fun variations of traditional Secret Santa",
+    "p3Desc": "Discover White Elephant, Chocolate Santa, and other ways to innovate the holiday game.",
+    "p3Date": "March 05, 2026"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "desc": "Oops! Looks like you got lost in the draw. The page you are looking for does not exist or has been moved.",
+    "backBtn": "Back to home"
+  },
+  "BlogPostPage": {
+    "back": "Back to blog",
+    "notFound": "Article not found"
+  },
+  "BlogPosts": {
+    "dicas-presente-amigo-secreto": {
+      "title": "5 Tips to nail your Secret Santa gift",
+      "date": "January 15, 2026",
+      "p1": "Participating in a secret santa is always fun, but choosing the perfect gift can be a real challenge, especially when we get that coworker we barely know or a distant relative.",
+      "p2": "The first golden rule is: investigate social media. Often, a simple look at a person's Instagram reveals their hobbies, favorite bands, or places they like to go. If that fails, ask mutual friends discreetly.",
+      "p3": "Finally, useful gifts never fail. A quality thermos, good earphones, or a specialty coffee kit are items that please 99% of people. The important thing is the care when wrapping and delivering!"
+    },
+    "amigo-secreto-a-distancia": {
+      "title": "How to organize a remote Secret Santa",
+      "date": "February 22, 2026",
+      "p1": "With families spread around the world and home office becoming standard, the traditional secret santa had to adapt. But the good news is that doing it online can be just as fun as in person.",
+      "p2": "The first step is to use an online platform like ours to do the draw without anyone having to be the 'organizer who doesn't play'. Everyone gets their match via WhatsApp, keeping the mystery.",
+      "p3": "For the reveal, set a date for a video call on Zoom or Google Meet. Set a deadline for everyone to buy gifts online and have them delivered directly to the recipient's house. The rule is clear: you can only open the package on the day of the group call!"
+    },
+    "variacoes-divertidas-amigo-secreto": {
+      "title": "3 Fun variations of Secret Santa",
+      "date": "March 05, 2026",
+      "p1": "Tired of the same dynamic every year? Innovating the rules of secret santa can bring new life and lots of laughs to your holiday party.",
+      "p2": "The 'White Elephant' (or Yankee Swap) is a favorite for troublemakers. Gifts are bought generically and wrapped to hide their shape. On your turn, you can choose a wrapped gift from the table or steal an opened gift from someone who played before you!",
+      "p3": "Another awesome variation is the 'Secret Enemy' (or Gag Gift Exchange), focused on funny, ironic gifts or knick-knacks you have at home and want to pass on. The goal here isn't material value, but the creativity of the joke."
+    }
   }
 }

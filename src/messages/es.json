@@ -246,5 +246,51 @@
     "accessedDesc": "participantes ya han accedido y visto a quién les tocó.",
     "dangerZone": "Zona de Peligro",
     "dangerDesc": "Si alguien escribió mal un nombre o si necesitas reiniciar el sorteo, la única forma es eliminando este grupo y creando uno nuevo. Esta acción es irreversible."
+  },
+  "Blog": {
+    "title": "Blog del Amigo Invisible",
+    "subtitle": "Consejos, ideas y novedades para organizar el sorteo perfecto.",
+    "readMore": "Leer artículo",
+    "p1Title": "5 Consejos para acertar con el regalo",
+    "p1Desc": "Descubre cómo elegir el regalo ideal incluso si te tocó esa persona que apenas conoces.",
+    "p1Date": "15 de Enero, 2026",
+    "p2Title": "Cómo organizar un Amigo Invisible a distancia",
+    "p2Desc": "Aprende a hacer el sorteo y la revelación por videollamada con amigos y familiares lejanos.",
+    "p2Date": "22 de Febrero, 2026",
+    "p3Title": "3 Variaciones divertidas del Amigo Invisible",
+    "p3Desc": "Conoce el Amigo Ladrón, Amigo Chocolate y otras formas de innovar en el juego este año.",
+    "p3Date": "05 de Marzo, 2026"
+  },
+  "NotFound": {
+    "title": "Página no encontrada",
+    "desc": "¡Ups! Parece que te perdiste en el sorteo. La página que buscas no existe o ha sido movida.",
+    "backBtn": "Volver al inicio"
+  },
+  "BlogPostPage": {
+    "back": "Volver al blog",
+    "notFound": "Artículo no encontrado"
+  },
+  "BlogPosts": {
+    "dicas-presente-amigo-secreto": {
+      "title": "5 Consejos para acertar con el regalo",
+      "date": "15 de Enero, 2026",
+      "p1": "Participar en un amigo invisible siempre es divertido, pero elegir el regalo perfecto puede ser un verdadero desafío, especialmente cuando nos toca ese compañero de trabajo que apenas conocemos.",
+      "p2": "La primera regla de oro es: investiga las redes sociales. A menudo, un simple vistazo al Instagram de la persona revela sus pasatiempos, bandas favoritas o lugares que frecuenta. Si eso falla, pregunta discretamente a amigos en común.",
+      "p3": "Por último, los regalos útiles nunca fallan. Un termo de calidad, buenos auriculares o un kit de cafés especiales son artículos que agradan al 99% de las personas. ¡Lo importante es el cariño al envolver y entregar!"
+    },
+    "amigo-secreto-a-distancia": {
+      "title": "Cómo organizar un Amigo Invisible a distancia",
+      "date": "22 de Febrero, 2026",
+      "p1": "Con familias repartidas por el mundo y el teletrabajo como norma, el tradicional amigo invisible tuvo que adaptarse. Pero la buena noticia es que hacerlo online puede ser tan divertido como en persona.",
+      "p2": "El primer paso es usar una plataforma online como la nuestra para realizar el sorteo sin que nadie tenga que ser el 'organizador que no participa'. Cada uno recibe su asignación por WhatsApp.",
+      "p3": "Para la revelación, fijen una fecha para una videollamada en Zoom o Meet. Establezcan un plazo para comprar los regalos online y enviarlos directo a la casa del destinatario. La regla es clara: ¡solo se puede abrir el paquete el día de la llamada!"
+    },
+    "variacoes-divertidas-amigo-secreto": {
+      "title": "3 Variaciones divertidas del Amigo Invisible",
+      "date": "05 de Marzo, 2026",
+      "p1": "¿Cansado de la misma dinámica cada año? Innovar en las reglas del amigo invisible puede traer aire fresco y muchas risas a tu fiesta de fin de año.",
+      "p2": "El 'Elefante Blanco' (o Amigo Ladrón) es el favorito de los traviesos. Los regalos se compran de forma genérica y se envuelven para ocultar su forma. En tu turno, ¡puedes elegir un regalo cerrado o robar uno abierto de alguien que jugó antes!",
+      "p3": "Otra variación increíble es el 'Enemigo Invisible', centrado en regalos divertidos, irónicos o trastos que tienes en casa y quieres regalar. El objetivo aquí no es el valor material, sino la creatividad de la broma."
+    }
   }
 }

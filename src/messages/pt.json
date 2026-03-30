@@ -246,5 +246,51 @@
     "accessedDesc": "participantes já acessaram e viram quem tiraram.",
     "dangerZone": "Zona de Perigo",
     "dangerDesc": "Se alguém escreveu o nome errado ou se você precisa recomeçar o sorteio, a única forma é excluindo este grupo e criando um novo. Esta ação é irreversível."
+  },
+  "Blog": {
+    "title": "Blog do Amigo Secreto",
+    "subtitle": "Dicas, ideias e novidades para organizar o sorteio perfeito.",
+    "readMore": "Ler artigo",
+    "p1Title": "5 Dicas para não errar no presente de Amigo Secreto",
+    "p1Desc": "Descubra como escolher o presente ideal mesmo tirando aquela pessoa do escritório que você mal conhece.",
+    "p1Date": "15 de Janeiro, 2026",
+    "p2Title": "Como organizar um Amigo Secreto à distância",
+    "p2Desc": "Aprenda a fazer o sorteio e a revelação por vídeo chamada com amigos e familiares que moram longe.",
+    "p2Date": "22 de Fevereiro, 2026",
+    "p3Title": "3 Variações divertidas do Amigo Secreto tradicional",
+    "p3Desc": "Conheça o Amigo Ladrão, Amigo Chocolate e outras formas de inovar na brincadeira de fim de ano.",
+    "p3Date": "05 de Março, 2026"
+  },
+  "NotFound": {
+    "title": "Página não encontrada",
+    "desc": "Ops! Parece que você se perdeu no sorteio. A página que você está procurando não existe ou foi movida.",
+    "backBtn": "Voltar para o início"
+  },
+  "BlogPostPage": {
+    "back": "Voltar para o blog",
+    "notFound": "Artigo não encontrado"
+  },
+  "BlogPosts": {
+    "dicas-presente-amigo-secreto": {
+      "title": "5 Dicas para não errar no presente de Amigo Secreto",
+      "date": "15 de Janeiro, 2026",
+      "p1": "Participar de um amigo secreto é sempre divertido, mas escolher o presente perfeito pode ser um verdadeiro desafio, especialmente quando tiramos aquele colega de trabalho que mal conhecemos ou um parente distante.",
+      "p2": "A primeira regra de ouro é: investigue as redes sociais. Muitas vezes, um simples olhar no Instagram da pessoa revela seus hobbies, bandas favoritas ou lugares que gosta de frequentar. Se isso falhar, pergunte discretamente para amigos em comum.",
+      "p3": "Por fim, presentes úteis nunca falham. Uma garrafa térmica de qualidade, fones de ouvido bons ou um kit de cafés especiais são itens que agradam 99% das pessoas. O importante é o carinho na hora de embalar e entregar!"
+    },
+    "amigo-secreto-a-distancia": {
+      "title": "Como organizar um Amigo Secreto à distância",
+      "date": "22 de Fevereiro, 2026",
+      "p1": "Com famílias espalhadas pelo mundo e o home office se tornando padrão, o tradicional amigo secreto precisou se adaptar. Mas a boa notícia é que fazer isso online pode ser tão divertido quanto presencialmente.",
+      "p2": "O primeiro passo é usar uma plataforma online como a nossa para realizar o sorteio sem que ninguém precise ser o 'organizador que não participa'. Cada um recebe seu sorteado pelo WhatsApp, mantendo o mistério.",
+      "p3": "Para a revelação, marquem uma data para uma videochamada no Zoom ou Google Meet. Estipulem um prazo para que todos comprem os presentes em lojas online e mandem entregar direto na casa do sorteado. A regra é clara: só pode abrir o pacote no dia da chamada em grupo!"
+    },
+    "variacoes-divertidas-amigo-secreto": {
+      "title": "3 Variações divertidas do Amigo Secreto",
+      "date": "05 de Março, 2026",
+      "p1": "Cansado da mesma dinâmica todo ano? Inovar nas regras do amigo secreto pode trazer um fôlego novo e muitas risadas para a sua confraternização de fim de ano.",
+      "p2": "O 'Amigo Ladrão' (ou Elefante Branco) é o favorito dos bagunceiros. Nele, os presentes são comprados de forma genérica e embrulhados para esconder o formato. Na sua vez, você pode escolher um presente fechado da mesa ou roubar o presente aberto de alguém que jogou antes de você!",
+      "p3": "Outra variação incrível é o 'Inimigo Secreto' (ou Amigo da Onça), focado em presentes engraçados, irônicos ou cacarecos que você tem em casa e quer passar para frente. O objetivo aqui não é o valor material, mas sim a criatividade da piada."
+    }
   }
 }
