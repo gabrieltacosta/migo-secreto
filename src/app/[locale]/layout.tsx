@@ -24,6 +24,8 @@ interface RootLayoutProps {
   }>;
 }
 
+const siteUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
+
 // 2. SEO Dinâmico (i18n) - Agora o Google lê o idioma correto!
 export async function generateMetadata({
   params,
@@ -36,7 +38,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
   return {
-    metadataBase: new URL(`${process.env.NEXT_PUBLIC_APP_URL}`),
+    metadataBase: new URL(siteUrl),
     title: {
       default: t("title"),
       template: `%s | ${t("title")}`,
@@ -46,24 +48,24 @@ export async function generateMetadata({
     openGraph: {
       title: t("title"),
       description: t("description"),
-      url: `${process.env.NEXT_PUBLIC_APP_URL}/${locale}`,
+      url: `${siteUrl}/${locale}`,
       siteName: t("title"),
-      images: [{ url: `${process.env.NEXT_PUBLIC_APP_URL}/gift1.png` }],
-      locale: locale === "en" ? "en_US" : locale === "es" ? "es_ES" : "pt_BR",
+      images: [{ url: `${siteUrl}/gift1.png` }],
+      locale: locale === "pt" ? "pt_BR" : locale,
       type: "website",
     },
     twitter: {
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      images: [`${process.env.NEXT_PUBLIC_APP_URL}/gift1.png`],
+      images: [`${siteUrl}/gift1.png`],
     },
     alternates: {
-      canonical: `${process.env.NEXT_PUBLIC_APP_URL}/${locale}`,
+      canonical: `${siteUrl}/${locale}`,
       languages: {
-        "pt-BR": `${process.env.NEXT_PUBLIC_APP_URL}/pt`,
-        "en-US": `${process.env.NEXT_PUBLIC_APP_URL}/en`,
-        "es-ES": `${process.env.NEXT_PUBLIC_APP_URL}/es`,
+        "pt-BR": `${siteUrl}/pt`,
+        en: `${siteUrl}/en`,
+        es: `${siteUrl}/es`,
       },
     },
   };
@@ -80,7 +82,7 @@ export default async function RootLayout({
 
   return (
     <html
-      lang={locale === "en" ? "en_US" : locale === "es" ? "es_ES" : "pt_BR"}
+      lang={locale === "pt" ? "pt-BR" : locale}
       className={cn("h-full", "antialiased", "font-sans", inter.variable)}
     >
       {/* 4. Removido o cz-shortcut-listen para evitar erro de hidratação */}
