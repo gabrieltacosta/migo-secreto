@@ -24,7 +24,7 @@ interface RootLayoutProps {
   }>;
 }
 
-const siteUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
+const siteUrl = process.env.NEXT_PUBLIC_APP_URL || "https://migosecretosimples.com.br";
 
 // 2. SEO Dinâmico (i18n) - Agora o Google lê o idioma correto!
 export async function generateMetadata({
