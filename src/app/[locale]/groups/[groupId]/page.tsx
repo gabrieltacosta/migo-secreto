@@ -11,7 +11,7 @@ interface PageProps {
   params: Promise<{ groupId: string; locale: string }>;
 }
 
-const siteUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
+const siteUrl = process.env.NEXT_PUBLIC_APP_URL || "https://migosecretosimples.com.br";
 
 
 export async function generateMetadata({ params }: PageProps) {
