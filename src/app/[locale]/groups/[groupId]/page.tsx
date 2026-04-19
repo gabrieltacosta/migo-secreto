@@ -11,6 +11,9 @@ interface PageProps {
   params: Promise<{ groupId: string; locale: string }>;
 }
 
+const siteUrl = process.env.NEXT_PUBLIC_APP_URL || "http://localhost:3000";
+
+
 export async function generateMetadata({ params }: PageProps) {
   const { groupId, locale } = await params;
   const t = await getTranslations({ locale, namespace: "GroupPage" });
@@ -33,7 +36,11 @@ export async function generateMetadata({ params }: PageProps) {
     openGraph: {
       title: title,
       description: desc,
-      images: ["/gift1.png"],
+      url: `${siteUrl}/${locale}`,
+      siteName: t("title"),
+      images: [{ url: `${siteUrl}/gift1.png` }],
+      locale: locale === "pt" ? "pt_BR" : locale,
+      type: "website",
     },
   };
 }
