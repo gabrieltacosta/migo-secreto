@@ -43,6 +43,7 @@ export async function generateMetadata({
       default: t("title"),
       template: `%s | ${t("title")}`,
     },
+    icons: {icon: "/gift1.png",},
     description: t("description"),
     keywords: t("keywords").split(","), // Supondo que você salve no JSON como "palavra1, palavra2"
     openGraph: {
