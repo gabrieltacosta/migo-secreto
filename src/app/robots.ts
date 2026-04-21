@@ -20,7 +20,6 @@ export default function robots(): MetadataRoute.Robots {
       // Bloqueia a indexação de grupos criados por usuários em qualquer idioma
       disallow: [
         "/api/",
-        "/_next/",
         "/groups/",
         "/en/groups/",
         "/es/groups/", // Bloqueia o acesso a /groups/[id]
