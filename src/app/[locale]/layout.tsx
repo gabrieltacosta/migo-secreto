@@ -9,6 +9,7 @@ import {
   setRequestLocale,
 } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
+import AdSense from "@/components/google/AdSense";
 
 export function generateStaticParams() {
   return [{ locale: "pt" }, { locale: "en" }, { locale: "es" }];
@@ -24,7 +25,8 @@ interface RootLayoutProps {
   }>;
 }
 
-const siteUrl = process.env.NEXT_PUBLIC_APP_URL || "https://migosecretosimples.com.br";
+const siteUrl =
+  process.env.NEXT_PUBLIC_APP_URL || "https://migosecretosimples.com.br";
 
 // 2. SEO Dinâmico (i18n) - Agora o Google lê o idioma correto!
 export async function generateMetadata({
@@ -88,6 +90,9 @@ export default async function RootLayout({
     >
       {/* 4. Removido o cz-shortcut-listen para evitar erro de hidratação */}
       <body className="min-h-full flex flex-col">
+        <head>
+          <AdSense pId={process.env.NEXT_PUBLIC_AD_SENSE_ID as string} />
+        </head>
         <NextIntlClientProvider messages={messages}>
           <Header />
           {children}
