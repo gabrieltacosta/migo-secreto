@@ -49,7 +49,7 @@ export async function generateMetadata({
     openGraph: {
       title: t("title"),
       description: t("description"),
-      url: `${siteUrl}/${locale}`,
+      url: siteUrl,
       siteName: t("title"),
       images: [{ url: `${siteUrl}/gift1.png` }],
       locale: locale === "pt" ? "pt_BR" : locale,
@@ -62,11 +62,12 @@ export async function generateMetadata({
       images: [`${siteUrl}/gift1.png`],
     },
     alternates: {
-      canonical: `${siteUrl}/${locale}`,
+      canonical: siteUrl,
       languages: {
-        "pt-BR": `${siteUrl}/pt`,
+        "pt-BR": siteUrl,
         en: `${siteUrl}/en`,
         es: `${siteUrl}/es`,
+        "x-default": siteUrl,
       },
     },
   };
