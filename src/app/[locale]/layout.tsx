@@ -88,11 +88,11 @@ export default async function RootLayout({
       lang={locale === "pt" ? "pt-BR" : locale}
       className={cn("h-full", "antialiased", "font-sans", inter.variable)}
     >
+      <head>
+        <AdSense pId={process.env.NEXT_PUBLIC_AD_SENSE_ID as string} />
+      </head>
       {/* 4. Removido o cz-shortcut-listen para evitar erro de hidratação */}
       <body className="min-h-full flex flex-col">
-        <head>
-          <AdSense pId={process.env.NEXT_PUBLIC_AD_SENSE_ID as string} />
-        </head>
         <NextIntlClientProvider messages={messages}>
           <Header />
           {children}
