@@ -50,7 +50,7 @@ export async function generateMetadata({
       description: t("description"),
       url: siteUrl,
       siteName: t("title"),
-      images: [{ url: `${siteUrl}/gift1.png` }],
+      images: [{ url: `${siteUrl}/gift.png` }],
       locale: locale === "pt" ? "pt_BR" : locale,
       type: "website",
     },
@@ -58,7 +58,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      images: [`${siteUrl}/gift1.png`],
+      images: [`${siteUrl}/gift.png`],
     },
     alternates: {
       canonical: siteUrl,
