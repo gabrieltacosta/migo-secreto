@@ -10,12 +10,12 @@ export default function robots(): MetadataRoute.Robots {
       // Permite a raiz e a criação de grupos em todos os idiomas
       allow: [
         "/",
-        "/groups/new/",
-        "/en/groups/new/",
-        "/es/groups/new/",
-        "/blog/",
-        "/en/blog/",
-        "/es/blog/",
+        "/groups/new",
+        "/en/groups/new",
+        "/es/groups/new",
+        "/blog",
+        "/en/blog",
+        "/es/blog",
       ],
       // Bloqueia a indexação de grupos criados por usuários em qualquer idioma
       disallow: [
