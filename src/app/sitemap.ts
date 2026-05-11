@@ -1,8 +1,9 @@
 import { MetadataRoute } from "next";
+import path from "node:path";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl =
-    process.env.NEXT_PUBLIC_APP_URL || "https://amigosecretosimples.com";
+    process.env.NEXT_PUBLIC_APP_URL || "https://migosecretosimples.com.br";
 
   // Array com as configurações base das suas rotas
   const routes = [
@@ -23,6 +24,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       path: "/amigo-secreto-whatsapp",
       priority: 0.9,
+      changeFrequency: "yearly" as const,
+    },
+    {
+      path: "/blog/dicas-presente-amigo-secreto",
+      priority: 0.8,
+      changeFrequency: "yearly" as const,
+    },
+    {
+      path: "/blog/amigo-secreto-a-distancia",
+      priority: 0.8,
+      changeFrequency: "yearly" as const,
+    },
+    {
+      path: "/blog/variacoes-divertidas-amigo-secreto",
+      priority: 0.8,
       changeFrequency: "yearly" as const,
     },
   ];
