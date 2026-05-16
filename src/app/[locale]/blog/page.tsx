@@ -48,7 +48,23 @@ export default async function BlogPage({ params }: PageProps) {
       desc: t("p3Desc"),
       date: t("p3Date"),
       rawDate: "2026-03-05",
-      key: "variacoes-divertidas-amigo-secreto",
+      key: "variacoes-divertidas-amigo-secreto"
+    },
+    {
+      id: 4,
+      title: t("p4Title"),
+      desc: t("p4Desc"),
+      date: t("p4Date"),
+      rawDate: "2026-04-12",
+      key: "amigo-secreto-firma"
+    },
+    {
+      id: 5,
+      title: t("p5Title"),
+      desc: t("p5Desc"),
+      date: t("p5Date"),
+      rawDate: "2026-05-16",
+      key: "brincadeiras-revelacao"
     },
   ];
 

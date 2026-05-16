@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/blog", priority: 0.8, changeFrequency: "yearly" as const },
     { path: "/groups/new", priority: 0.8, changeFrequency: "yearly" as const },
     { path: "/privacy", priority: 0.5, changeFrequency: "yearly" as const },
+    { path: "/terms", priority: 0.5, changeFrequency: "yearly" as const },
     { path: "/amigo-pascoa", priority: 0.8, changeFrequency: "yearly" as const },
     { path: "/amigo-chocolate", priority: 0.8, changeFrequency: "yearly" as const },
     { path: "/amigo-secreto-whatsapp", priority: 0.9, changeFrequency: "yearly" as const },

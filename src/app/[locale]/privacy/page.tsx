@@ -1,84 +1,79 @@
-import { Link } from "@/i18n/routing"; // Nosso Link customizado!
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
-// Estratégia Sênior para SEO Multilíngue
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) {
-  const { locale } = await params;
-  setRequestLocale(locale);
-
-  // Puxa as traduções apenas para as metatags no servidor
-  const t = await getTranslations({ locale, namespace: "Privacy" });
-
-  return {
-    title: t("title"),
-    // Usamos o primeiro parágrafo (p1) como description para o Google
-    description: t("p1"),
-  };
-}
-
-const PrivacyPage = async ({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}) => {
-  const { locale } = await params;
-  setRequestLocale(locale);
-  // Puxa as traduções para o componente visual
-  const t = await getTranslations({ locale, namespace: "Privacy" });
+export default function PrivacyPage() {
+  const t = useTranslations("Privacy");
 
   return (
-    <main className="min-h-screen bg-gray-50 pb-20">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8">
-          {t("title")}
-        </h1>
+    <div className="w-full min-h-screen bg-gray-950 text-gray-300 py-16 px-4 sm:px-6 lg:px-8 flex-1">
+      <div className="max-w-3xl mx-auto space-y-12 select-none">
+        
+        {/* Cabeçalho Principal com Destaque */}
+        <header className="border-b border-gray-800 pb-6">
+          <h1 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            {t("title")}
+          </h1>
+        </header>
 
-        <section className="mb-8 sm:mb-10">
-          <p className="mb-4 text-sm sm:text-base leading-relaxed">{t("p1")}</p>
-          <p className="mb-4 text-sm sm:text-base leading-relaxed">{t("p2")}</p>
-          <p className="mb-4 text-sm sm:text-base leading-relaxed">{t("p3")}</p>
-          <p className="mb-4 text-sm sm:text-base leading-relaxed">{t("p4")}</p>
-          <p className="mb-4 text-sm sm:text-base leading-relaxed">{t("p5")}</p>
-          <p className="mb-4 text-sm sm:text-base leading-relaxed">{t("p6")}</p>
-          <p className="mb-4 text-sm sm:text-base leading-relaxed">{t("p7")}</p>
-        </section>
+        {/* Corpo do Texto Espaçado e Legível */}
+        <div className="space-y-10 text-base sm:text-lg leading-relaxed text-gray-400">
+          
+          <section className="space-y-3">
+            <h2 className="text-xl font-bold text-white tracking-wide">
+              {t("intro_title")}
+            </h2>
+            <p>{t("intro_p")}</p>
+          </section>
 
-        <section className="mb-8 sm:mb-10">
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6">
-            {t("commitmentTitle")}
-          </h2>
-          <p className="mb-4 text-sm sm:text-base leading-relaxed">
-            {t("commitmentDesc")}
-          </p>
-          <ul className="list-disc list-inside space-y-2 sm:space-y-3 mb-4 text-sm sm:text-base">
-            <li>{t("l1")}</li>
-            <li>{t("l2")}</li>
-            <li>{t("l3")}</li>
-          </ul>
-        </section>
+          <section className="space-y-3">
+            <h2 className="text-xl font-bold text-white tracking-wide">
+              {t("data_title")}
+            </h2>
+            <p>{t("data_p")}</p>
+          </section>
 
-        <section>
-          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6">
-            {t("moreInfoTitle")}
-          </h2>
-          <p className="text-sm sm:text-base leading-relaxed">
-            {t("moreInfoDesc")}{" "}
-            <Link
-              href="mailto:contato@amigosecretosimples.com"
-              className="text-blue-600 hover:underline break-all"
-              target="_blank"
-            >
-              contato@migosecretosimples.com.br
-            </Link>
-          </p>
-        </section>
+          <section className="space-y-4">
+            <h2 className="text-xl font-bold text-white tracking-wide">
+              {t("cookies_title")}
+            </h2>
+            <p>{t("cookies_p")}</p>
+            <ul className="list-disc pl-6 space-y-3 text-gray-400">
+              <li>{t("cookies_essential")}</li>
+              <li>{t("cookies_analytical")}</li>
+            </ul>
+          </section>
+
+          <section className="space-y-3">
+            <h2 className="text-xl font-bold text-white tracking-wide">
+              {t("retention_title")}
+            </h2>
+            <p>{t("retention_p")}</p>
+          </section>
+
+          <section className="space-y-3">
+            <h2 className="text-xl font-bold text-white tracking-wide">
+              {t("sharing_title")}
+            </h2>
+            <p>{t("sharing_p")}</p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="text-xl font-bold text-white tracking-wide">
+              {t("rights_title")}
+            </h2>
+            <p>{t("rights_p")}</p>
+            <div className="bg-gray-900/50 border border-gray-800 p-5 rounded-xl text-blue-400 font-medium text-center sm:text-left shadow-inner">
+              {t("contact")}
+            </div>
+          </section>
+          
+        </div>
+
+        {/* Rodapé Interno da Página */}
+        <footer className="pt-6 border-t border-gray-800 text-sm text-gray-600">
+          {t("effective_date")}
+        </footer>
+        
       </div>
-    </main>
+    </div>
   );
-};
-
-export default PrivacyPage;
+}

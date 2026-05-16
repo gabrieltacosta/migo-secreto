@@ -78,27 +78,11 @@
     "linksTitle": "Enlaces",
     "linkContact": "Contáctenos",
     "linkPrivacy": "Privacidad",
+    "linkTerms": "Términos de servicio",
     "catTitle": "Categorías",
     "catChocolate": "Amigo Chocolate",
     "catEaster": "Amigo Pascua",
     "rights": "© 2026 Amigo Invisible. Todos los derechos reservados."
-  },
-  "Privacy": {
-    "title": "Política de Privacidad",
-    "p1": "Tu privacidad es importante para nosotros. Es política de Amigo Invisible Simple respetar tu privacidad con respecto a cualquier información que podamos recopilar en el sitio web de Amigo Invisible Simple, y otros sitios que poseemos y operamos.",
-    "p2": "Solo solicitamos información personal cuando realmente la necesitamos para brindarle un servicio. Lo hacemos por medios justos y legales, con su conocimiento y consentimiento. También le informamos por qué la recopilamos y cómo se utilizará.",
-    "p3": "Solo retenemos la información recopilada durante el tiempo necesario para proporcionarle el servicio solicitado. Cuando almacenamos datos, los protegemos dentro de medios comercialmente aceptables para evitar pérdidas y robos, así como el acceso, divulgación, copia, uso o modificación no autorizados.",
-    "p4": "No compartimos ninguna información de identificación personal públicamente ni con terceros, excepto cuando lo exija la ley.",
-    "p5": "Nuestro sitio web puede tener enlaces a sitios externos que no son operados por nosotros. Tenga en cuenta que no tenemos control sobre el contenido y las prácticas de estos sitios, y no podemos aceptar responsabilidad por sus respectivas políticas de privacidad.",
-    "p6": "Usted es libre de rechazar nuestra solicitud de su información personal, en el entendimiento de que es posible que no podamos brindarle algunos de los servicios deseados.",
-    "p7": "El uso continuado de nuestro sitio web se considerará como la aceptación de nuestras prácticas en torno a la privacidad y la información personal. Si tiene alguna pregunta sobre cómo manejamos los datos del usuario y la información personal, no dude en contactarnos.",
-    "commitmentTitle": "Compromiso del Usuario",
-    "commitmentDesc": "El usuario se compromete a hacer un uso adecuado de los contenidos e información que Amigo Invisible Simple ofrece en el sitio web, incluyendo pero no limitado a:",
-    "l1": "No participar en actividades que sean ilegales o contrarias a la buena fe y al orden público;",
-    "l2": "No difundir propaganda o contenido de naturaleza racista, xenófoba, juegos de azar, cualquier tipo de pornografía ilegal, apología del terrorismo o contra los derechos humanos;",
-    "l3": "No causar daños a los sistemas físicos (hardware) y lógicos (software) de Amigo Invisible Simple, sus proveedores o terceros, para introducir o difundir virus informáticos o cualquier otro sistema de hardware o software que sea capaz de causar los daños mencionados anteriormente.",
-    "moreInfoTitle": "Más Información",
-    "moreInfoDesc": "Puede contactarnos por correo electrónico en"
   },
   "GroupsPage": {
     "title": "Mis Grupos | Amigo Invisible",
@@ -259,7 +243,13 @@
     "p2Date": "22 de Febrero, 2026",
     "p3Title": "3 Variaciones divertidas del Amigo Invisible",
     "p3Desc": "Conoce el Amigo Ladrón, Amigo Chocolate y otras formas de innovar en el juego este año.",
-    "p3Date": "05 de Marzo, 2026"
+    "p3Date": "05 de Marzo, 2026",
+    "p4Title": "Amigo Invisible en la Oficina: Consejos para no equivocarse al regalarle algo a tu jefe o compañero",
+    "p4Desc": "El final del año en el entorno empresarial trae consigo un ambiente de cierre de ciclos, consecución de objetivos y las famosas reuniones.",
+    "p4Date": "12 de Abril, 2026",
+    "p5Title": "Juegos para el Día del Intercambio: Cómo Revelar a tu Amigo Invisible de Forma Divertida",
+    "p5Desc": "Transforma el momento de la entrega de regalos en un evento inolvidable con dinámicas creativas, adivinanzas y muchas risas.",
+    "p5Date": "16 de Mayo, 2026"
   },
   "NotFound": {
     "title": "Página no encontrada",
@@ -342,6 +332,100 @@
 
       "h2_5": "Conclusión: La Conexión del Grupo es lo más Importante",
       "p10": "Independientemente de si eliges el formato tradicional, el dinamismo del Amigo Ladrão o las risas del Enemigo Invisible, el verdadero propósito de estas dinámicas es acercar a las personas. Elige la variación que mejor se adapte al perfil y al nivel de confianza de tu grupo, define reglas claras para que todos jueguen cómodamente ¡y aprovecha el momento para fortalecer los lazos con quienes son importantes para ti!"
+    },
+    "amigo-secreto-firma": {
+      "title": "Amigo Invisible en la Oficina: Consejos para No Errar con el Regalo del Jefe o Compañero",
+      "date": "12 de Abril, 2026",
+      "p1": "El fin de año en el entorno corporativo trae una atmósfera de cierre de ciclos, metas cumplidas y las famosas celebraciones de empresa. Junto con los festejos, llega uno de los momentos más tradicionales — y que frecuentemente genera cierta ansiedad: el amigo invisible de la oficina. Organizar o participar en un intercambio de regalos en el trabajo es una excelente oportunidad para estrechar lazos con el equipo, romper el hielo entre diferentes departamentos y relajar la rutina. Sin embargo, el entorno profesional exige cuidados específicos. Después de todo, la línea entre un regalo creativo y una elección inadecuada que pueda generar momentos incómodos junto a la máquina de café es muy delgada.",
+      "p2": "Si te tocó ese compañero de escritorio con el que hablas todos los días, la tarea es sencilla. Pero, ¿qué hacer si te tocó el CEO de la empresa, tu jefe directo o un colaborador de otro sector con el que apenas te cruzas en el pasillo? Para ayudarte a navegar por esta dinámica sin cometer errores, hemos preparado esta guía definitiva. Aquí encontrarás reglas de etiqueta corporativa, sugerencias de regalos divididas por rangos de precio y la mejor manera de organizar este evento a la velocidad del ecosistema corporativo.",
+
+      "h2_1": "1. Las Reglas de Oro del Amigo Invisible Corporativo",
+      "p3": "Antes de elegir el regalo, es fundamental entender que un intercambio de regalos en el trabajo sigue formando parte del entorno profesional. El sentido común debe dictar todas tus elecciones, desde el empaque hasta el momento de la revelación. El primer paso es respetar rigurosamente el rango de precios estipulado. Gastar mucho menos transmite una idea de descuido o falta de interés, mientras que gastar mucho más puede parecer ostentación o un intento deliberado de llamar la atención ante la dirección, generando un clima de competencia innecesario.",
+      "p4": "Además, evita intimidades excesivas. Ropa con tallas muy específicas, perfumes intensos, cosméticos de tratamiento profundo o artículos con connotaciones políticas, religiosas o bromas internas pesadas deben quedar totalmente fuera. Si no conoces profundamente los hábitos de consumo de tu compañero, prefiere enfocarte en un tono profesional, amable y centrado en la utilidad general.",
+
+      "h2_2": "2. Sugerencias de Regalos Útiles: Hasta 15€ / $15",
+      "p5": "In este rango de precios, el secreto es enfocarse en la utilidad diaria para la rutina de trabajo o en pequeños detalles que hagan más agradable el espacio de la oficina o del home office. Los artículos de papelería premium y organización son excelentes opciones. Un organizador semanal o un bloc de notas minimalista con portadas neutras ayudan a los profesionales organizados a estructurar su día. Los organizadores de escritorio multifuncionales para bolígrafos, clips y el móvil también son geniales para mantener el espacio limpio y productivo.",
+      "p6": "Otro clásico que nunca pierde su utilidad en este rango de precios es el vaso térmico para café o agua, garantizando que la bebida se mantenga a la temperatura ideal durante reuniones largas. Las alfombrillas ergonómicas de cuero sintético (desk pads) también entran en la lista de excelentes opciones, ya que transforman el aspecto de cualquier mesa de trabajo, protegen los equipos y ofrecen comodidad al mover el ratón durante la jornada diaria.",
+
+      "h2_3": "3. Sugerencias de Regalos Sofisticados: Hasta 30€ / $30",
+      "p7": "Con un presupuesto un poco más amplio, es posible buscar regalos con mayor valor percibido, enfocándose en tecnología accesible o experiencias gastronómicas diferenciadas. En la categoría de tecnología para la rutina, un cargador por inducción (inalámbrico) para dejar sobre la mesa de trabajo es una elección moderna y práctica que elimina los cables sueltos. Los organizadores de cables y accesorios para viajes (pouches) también son perfectos para compañeros que viajan por trabajo o trabajan en un modelo híbrido y necesitan transportar portátiles y ratones con frecuencia.",
+      "p8": "Para los amantes de la gastronomía, los kits de cafés especiales o las mezclas de tés finos importados acompañados de un elegante infusor son regalos refinados y muy profesionales. Las cajas de bombones finos o trufas artesanales de chocolaterías premium, con empaques imponentes, también son aciertos seguros que agradan a la gran mayoría de las personas sin sobrepasar los límites de la etiqueta laboral.",
+
+      "h2_4": "4. Lo que NUNCA debes regalar en la Oficina",
+      "p9": "Para garantizar que tu nombre no se convierta en el tema principal de los rumores de pasillo por las razones equivocadas, evita artículos impersonales o invasivos a toda costa. Las tarjetas de regalo genéricas de supermercado transmiten la impresión de que compraste el regalo de prisa cinco minutos antes de la fiesta; si optas por una tarjeta de regalo, prefiere grandes plataformas de comercio electrónico o librerías. La ropa interior, los pijamas o las toallas son demasiado íntimos para el entorno corporativo y causan gran incomodidad.",
+      "p10": "Evita también regalos de carácter estético agresivo o que puedan ser interpretados como críticas indirectas a la apariencia o postura del colega, tales como básculas de baño, kits antiacné, cremas reductoras o libros de autoayuda centrados en fallas de comportamiento. Mantén el enfoque en la ligereza y el profesionalismo para asegurar que la actividad sea agradable para todos.",
+
+      "h2_5": "5. ¿Te tocó el Jefe? ¡Mantén la Calma!",
+      "p11": "Si el sorteo reveló el nombre de tu gerente, director o del CEO de la empresa, no te asustes. El error más común aquí es intentar impresionar comprando algo excesivamente caro, lo que rompe la regla del precio y genera incomodidad. La estrategia ideal para regalar a los superiores es apostar por el minimalismo corporativo clásico. Un buen libro de desarrollo profesional o una biografía que esté en la lista de los más vendidos, un porta-pasaportes de cuero premium o un kit de café gourmet seleccionado demuestran que respetas su posición sin sobrepasar las barreras profesionales.",
+
+      "h2_6": "Conclusión: Organización de Última Hora por WhatsApp",
+      "p12": "Sabemos que las prisas de fin de año dentro de las empresas son intensas. El cierre de informes y las metas finales consumen todo el tiempo disponible. A menudo, la idea del amigo invisible surge en el último minuto y nadie tiene tiempo para cortar papeles, buscar una caja y reunir a todos en una sala para el sorteo. Para evitar que la diversión muera o se convierta en un caos de correos electrónicos perdidos, la solución es llevar el evento a donde tu equipo ya habla todo el día: WhatsApp. Utilizando nuestra plataforma, el organizador crea el grupo en menos de 2 minutos y envía los resultados directamente a la aplicación de cada compañero, garantizando total secreto, practicidad y el máximo compromiso para celebrar los momentos inolvidables del equipo!"
+    },
+    "brincadeiras-revelacao": {
+      "title": "Juegos para el Día del Intercambio: Cómo Revelar a tu Amigo Invisible de Forma Divertida",
+      "date": "16 de Mayo, 2026",
+      "p1": "El sorteo ya se hizo, los regalos están comprados y la expectativa no para de crecer. ¡Por fin ha llegado el gran día de la revelación! Sin embargo, ir directo al grano y solo entregar los paquetes puede hacer que el momento se sienta mecánico y aburrido. El verdadero encanto del amigo invisible oculto está en la interacción, las risas y el suspenso que antecede a descubrir quién sacó a quién. Ya sea en una reunión familiar en el salón de casa, en una barbacoa con amigos de la infancia o en la celebración de la empresa, dinamizar este momento transforma un evento común en un recuerdo inolvidable.",
+      "p2": "Con la popularidad de los encuentros híbridos y digitales, muchas de estas dinámicas tradicionales se han adaptado, permitiendo que incluso quienes están lejos participen en la diversión con la misma intensidad. Para ayudarte a salir de lo obvio y hacer que el evento sea ligero, divertido y dinámico, hemos preparado una lista con los mejores juegos y formas creativas de revelar a tu amigo invisible.",
+
+      "h2_1": "1. El Clásico Adaptado: Descripción por Rasgos y Características",
+      "p3": "La dinámica más tradicional de todas consiste en describir a la persona que te tocó sin decir su nombre, pero puedes hacerla mucho más entretenida añadiendo reglas extra. En lugar de enfocarte solo en aspectos obvios como 'lleva gafas' o 'se sienta cerca de mí', intenta enfocarte en datos graciosos, manías saludables, momentos memorables que pasaron juntos en el año o pasatiempos peculiares que tenga la persona. Esto obliga al resto del grupo a interactuar de verdad para intentar adivinar.",
+      "p4": "Si el grupo es muy grande o el tiempo es corto, una excelente variación es el uso de 'palabras clave'. El participante en turno elige tres adjetivos o términos específicos que resumen perfectamente a su amigo invisible y los escribe (o los envía al chat de la videollamada). El grupo tiene solo tres intentos colectivos para adivinar el nombre basándose en estas pistas antes de la revelación oficial.",
+
+      "h2_2": "2. Enemigo Invisible: Humor en la Medida Justa",
+      "p5": "Para grupos que ya tienen mucha confianza, como amigos de hace muchos años o equipos de trabajo muy unidos, el juego del 'Enemigo Invisible' es garantía de grandes carcajadas. La mecánica de adivinación es estrictamente la misma que en el formato tradicional, pero con un giro: en lugar de elogiar a la persona desde el principio, debes comenzar destacando sus 'defectos' graciosos, despistes memorables del año o manías cómicas.",
+      "p6": "Vale hablar de ese amigo que siempre pierde las llaves, el compañero que siempre se deja el micrófono abierto en la reunión por error o quien siempre llega tarde a las citas. El cuidado fundamental aquí es mantener el sentido común y el respeto absoluto: las bromas deben enfocarse estrictamente en situaciones ligeras y relajadas, asegurando que el ambiente siga siendo amistoso y que todos se diviertan juntos.",
+
+      "h2_3": "3. Revelación por Mímica o Dibujo",
+      "p7": "Si quieres elevar la energía del lugar y hacer que todos se levanten de la silla, la revelación por mímica es la opción perfecta. Cuando llegue tu turno, no puedes decir absolutamente ninguna palabra. Debes imitar una forma de caminar, una frase típica (expresada solo con gestos), un pasatiempo específico (como pescar, jugar videojuegos o correr) o una situación clásica que defina a tu amigo invisible hasta que alguien del grupo lo descubra.",
+      "p8": "Para los grupos que realizan el evento de forma virtual, esta dinámica funciona perfectamente utilizando las herramientas de pizarra digital de las plataformas de video (como la pizarra de Zoom o Google Meet). El participante usa el ratón o la pantalla táctil para dibujar pistas que recuerden a la persona que le tocó en tiempo real, mientras los demás intentan adivinar por el chat. Es una excelente forma de romper el hielo y generar entretenimiento.",
+
+      "h2_4": "4. El Amigo Ladrón (o Robo de Regalos)",
+      "p9": "Esta es una dinámica completamente diferente que suele tener mucho éxito en las fiestas. En ella, el sorteo previo solo sirve para definir el orden en el que la gente va a jugar (1º, 2º, 3º, etc.), y los regalos comprados deben ser neutros y unisex. Todos los paquetes se colocan en una mesa central. El primer jugador elige un regalo de la mesa y lo abre para que todos vean qué es. El segundo jugador tiene una elección crucial: puede 'robar' el regalo ya abierto del primer jugador o elegir un paquete cerrado y misterioso de la mesa.",
+      "p10": "Si a alguien le roban un regalo, esa persona gana inmediatamente el derecho de elegir un nuevo paquete cerrado o robar a otra persona (con un límite de robos por ronda para que el juego no se vuelva infinito). Este juego crea un ambiente de estrategia muy divertido, giros inesperados y mucha relajación, ya que los regalos más codiciados cambian de manos varias veces hasta el final de la dinámica.",
+
+      "h2_5": "5. El Quiz del Amigo Invisible",
+      "p11": "Para grupos que disfrutan de los juegos de preguntas y respuestas, transformar la revelación en un pequeño concurso es una excelente idea. El participante hace tres preguntas de 'Sí o No' al resto del grupo sobre la persona que le tocó (Ej: '¿Esta persona trabaja en el equipo de tecnología?', '¿Esta persona prefiere el calor o el frío?', '¿Esta persona toma más de tres cafés al día?'). A medida que el grupo responde, el cerco se va cerrando hasta que el nombre correcto se revela por eliminación.",
+
+      "h2_6": "Conclusión: Practicidad en el Sorteo y Enfoque en la Fiesta",
+      "p12": "No importa qué dinámica elijas para el día de la revelación, el objetivo principal es celebrar la unión del grupo de forma ligera. Y para garantizar que la organización previa no consuma tu valioso tiempo de planificación de la fiesta, utiliza nuestra herramienta. Creas el grupo, gestionas a los participantes y realizas el sorteo de forma rápida y automatizada directo por WhatsApp. Con la parte burocrática resuelta en menos de dos minutos, ¡te queda mucho más tiempo para preparar los juegos y garantizar un evento inolvidable para todos!"
     }
+  },
+  "Privacy": {
+    "title": "Política de Privacidad",
+    "intro_title": "1. Introducción",
+    "intro_p": "Su privacidad es importante para nosotros. Es política de Amigo Secreto Simples respetar su privacidad respecto a cualquier información suya que podamos recolectar en el sitio Amigo Secreto Simples, y otros sitios que poseamos y operemos.",
+    "data_title": "2. Recopilación de Datos y Creación de Grupos",
+    "data_p": "Solicitamos información personal, como nombres y correos electrónicos de los participantes, solo cuando realmente la necesitamos para realizar el sorteo y prestar el servicio. Lo hacemos por medios legítimos y legales, con su conocimiento y consentimiento. Los datos de los grupos recién creados se almacenan temporalmente en el almacenamiento local de su navegador (localStorage/cookies) para facilitar su gestión y consulta, sin retención permanente innecesaria en nuestros servidores.",
+    "cookies_title": "3. Política de Cookies",
+    "cookies_p": "Utilizamos cookies y tecnologías similares para mejorar su experiencia. Usted tiene el control sobre qué cookies desea aceptar a través de nuestro aviso de privacidad en el pie de página del sitio.",
+    "cookies_essential": "Cookies Esenciales: Son necesarias para el funcionamiento básico del sitio, como guardar temporalmente las listas de participantes y mantener sus preferencias de privacidad.",
+    "cookies_analytical": "Cookies Analíticas (Google Analytics): Nos ayudan a comprender cómo los usuarios interactúan con el sitio, ayudando a identificar errores de usabilidad y mejorar la plataforma. Estas solo se activan con su consentimiento explícito haciendo clic en 'Aceptar todo'.",
+    "retention_title": "4. Uso y Retención de Datos",
+    "retention_p": "Solo retenemos la información recopilada durante el tiempo estrictamente necesario para proporcionar el servicio solicitado o cumplir con obligaciones legales. Cuando almacenamos datos, los protegemos dentro de medios comercialmente aceptables para evitar pérdidas y robos.",
+    "sharing_title": "5. Compartir Datos",
+    "sharing_p": "No compartimos información de identificación personal públicamente ni con terceros, excepto cuando lo exija la ley o para hacer posible el envío de las notificaciones del sorteo solicitadas por usted.",
+    "rights_title": "6. Sus Derechos",
+    "rights_p": "Usted tiene derecho a solicitar el acceso, rectificación o eliminación de sus datos. Dado que los datos de los sorteos se guardan en su propio navegador, usted mismo puede eliminarlos en cualquier momento limpiando los datos de navegación o las cookies del sitio.",
+    "contact": "Para ejercer cualquiera de sus derechos o resolver dudas, contáctenos por correo electrónico en contato@migosecretosimples.com.br.",
+    "effective_date": "Esta política es efectiva a partir del 16 de Mayo de 2026."
+  },
+  "Terms": {
+    "title": "Términos de Servicio",
+    "terms_title": "1. Términos",
+    "terms_p": "Al acceder al sitio Amigo Secreto Simples, usted acepta cumplir con estos términos de servicio, todas las leyes y regulaciones aplicables y acepta que es responsable del cumplimiento de las leyes locales aplicables. Si no está de acuerdo con alguno de estos términos, tiene prohibido usar o acceder a este sitio.",
+    "conduct_title": "2. Conducta del Usuario y Uso Adecuado",
+    "conduct_p": "Al utilizar nuestra herramienta para crear grupos y organizar sorteos, se compromete a hacer un uso adecuado de los contenidos y la información, garantizando que no introducirá nombres, términos o correos que contengan contenido ofensivo, difamatorio, ilícito o que atente contra los derechos humanos.",
+    "license_title": "3. Licencia de Uso",
+    "license_p": "Se concede permiso para utilizar temporalmente el software de Amigo Secreto Simples únicamente con fines personales y no comerciales de organización de sorteos. Esta es la concesión de una licencia de uso, no una transferencia de título.",
+    "disclaimer_title": "4. Exención de Responsabilidade",
+    "disclaimer_p": "Los servicios en el sitio se proporcionan 'tal cual'. Amigo Secreto Simples no ofrece garantías, expresas o implícitas, y por la presente descarta y niega todas las demás garantías, incluyendo, sin limitación, garantías implícitas de comercialización o idoneidad para un propósito particular.",
+    "law_title": "5. Ley Aplicable",
+    "law_p": "Estos términos y condiciones se rigen e interpretan de acuerdo con las leyes de Brasil, y usted se somete irrevocablemente a la jurisdicción exclusiva de los tribunales de esa localidad."
+  },
+  "CookieBanner": {
+    "title": "Valoramos su privacidad 🍪",
+    "description": "Utilizamos cookies esenciales para el funcionamiento de la plataforma (como recordar los datos de sus grupos recientes) y cookies analíticas para comprender cómo mejorar el sitio. Obtenga más información en nuestra <privacyLink>Política de Privacidad</privacyLink> and <termsLink>Términos de servicio</termsLink>.",
+    "btn_essential": "Solo Esenciales",
+    "btn_all": "Aceptar Todo"
   }
 }

@@ -10,7 +10,7 @@ import {
 } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import AdSense from "@/components/google/AdSense";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import CookieConsent from "@/components/CookieConsent";
 
 
 export function generateStaticParams() {
@@ -103,8 +103,8 @@ export default async function RootLayout({
           <Header />
           {children}
           <Footer />
+          <CookieConsent />
         </NextIntlClientProvider>
-        <GoogleAnalytics gaId="G-QSNGHRJFJJ" />
       </body>
     </html>
   );

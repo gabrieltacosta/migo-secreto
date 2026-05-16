@@ -91,6 +91,11 @@ const Footer = () => {
                 {t("navGroups")}
               </Link>
             </li>
+            <li>
+              <Link href="/blog" className="hover:text-blue-400">
+                Blog
+              </Link>
+            </li>
           </ul>
         </div>
 
@@ -112,8 +117,8 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link href="/blog" className="hover:text-blue-400">
-                Blog
+              <Link href="/terms" className="hover:text-blue-400">
+                {t("linkTerms")}
               </Link>
             </li>
           </ul>

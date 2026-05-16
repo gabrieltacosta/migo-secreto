@@ -78,27 +78,11 @@
     "linksTitle": "Links",
     "linkContact": "Contact Us",
     "linkPrivacy": "Privacy Policy",
+    "linkTerms": "Terms of Service",
     "catTitle": "Categories",
     "catChocolate": "Chocolate Santa",
     "catEaster": "Easter Santa",
     "rights": "© 2026 Secret Santa. All rights reserved."
-  },
-  "Privacy": {
-    "title": "Privacy Policy",
-    "p1": "Your privacy is important to us. It is Simple Secret Santa's policy to respect your privacy regarding any information we may collect on the Simple Secret Santa website, and other sites we own and operate.",
-    "p2": "We only ask for personal information when we truly need it to provide a service to you. We do it by fair and lawful means, with your knowledge and consent. We also let you know why we're collecting it and how it will be used.",
-    "p3": "We only retain collected information for as long as necessary to provide you with your requested service. What data we store, we'll protect within commercially acceptable means to prevent loss and theft, as well as unauthorized access, disclosure, copying, use or modification.",
-    "p4": "We don't share any personally identifying information publicly or with third-parties, except when required to by law.",
-    "p5": "Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites, and cannot accept responsibility or liability for their respective privacy policies.",
-    "p6": "You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.",
-    "p7": "Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us.",
-    "commitmentTitle": "User Commitment",
-    "commitmentDesc": "The user undertakes to make proper use of the contents and information that Simple Secret Santa offers on the site, including but not limited to:",
-    "l1": "Not engaging in activities that are illegal or contrary to good faith and public order;",
-    "l2": "Not disseminating propaganda or content of a racist, xenophobic, gambling nature, any type of illegal pornography, advocating terrorism or against human rights;",
-    "l3": "Not causing damage to the physical (hardware) and logical (software) systems of Simple Secret Santa, its suppliers or third parties, to introduce or disseminate computer viruses or any other hardware or software systems that are capable of causing the aforementioned damage.",
-    "moreInfoTitle": "More Information",
-    "moreInfoDesc": "You can contact us by email at"
   },
   "GroupsPage": {
     "title": "My Groups | Secret Santa",
@@ -259,7 +243,13 @@
     "p2Date": "February 22, 2026",
     "p3Title": "3 Fun variations of traditional Secret Santa",
     "p3Desc": "Discover White Elephant, Chocolate Santa, and other ways to innovate the holiday game.",
-    "p3Date": "March 05, 2026"
+    "p3Date": "March 05, 2026",
+    "p4Title": "Office Secret Santa: Tips for Not Making a Mistake When Giving a Gift to Your Boss or Colleague",
+    "p4Desc": "The end of the year in the corporate environment brings an atmosphere of closing cycles, achieving goals, and the famous get-togethers.",
+    "p4Date": "April 12, 2026",
+    "p5Title": "Games for the Reveal Day: How to Reveal Your Secret Santa in a Fun Way",
+    "p5Desc": "Turn your gift exchange into an unforgettable moment with creative dynamics, trivia, and lots of laughs.",
+    "p5Date": "May 16, 2026"
   },
   "NotFound": {
     "title": "Page not found",
@@ -342,6 +332,100 @@
 
       "h2_5": "Conclusion: The Group's Connection is What Matters",
       "p10": "Regardless of choosing the traditional format, the dynamism of the White Elephant, or the laughs of a Gag Gift exchange, the real purpose of these dynamics is to bring people closer. Choose the variation that best fits your group's profile and chemistry, set clear rules so everyone plays comfortably, and enjoy the moment to strengthen bonds with those who matter to you!"
+    },
+    "amigo-secreto-firma": {
+      "title": "Office Secret Santa: Tips for Choosing the Perfect Gift for Your Boss or Coworker",
+      "date": "April 12, 2026",
+      "p1": "The end of the year in the corporate environment brings an atmosphere of closing cycles, met goals, and the famous company parties. Along with the celebrations comes one of the most traditional — and often anxiety-inducing — moments: the office Secret Santa. Organizing or participating in a gift exchange at work is an excellent opportunity to strengthen bonds with the team, break the ice between different departments, and relax the routine. However, the professional environment requires specific care. After all, the line between a creative gift and an inappropriate choice that could lead to awkward moments at the coffee machine is very thin.",
+      "p2": "If you drew that desk mate you talk to every day, the task is simple. But what if you drew the company CEO, your direct manager, or a coworker from another department whom you barely cross paths with in the hallway? To help you navigate this dynamic without making any blunders, we have prepared this definitive guide. Here, you will find corporate etiquette rules, gift suggestions divided by price ranges, and the best way to organize this event at the speed of the corporate ecosystem.",
+
+      "h2_1": "1. The Golden Rules of Corporate Gift Exchanges",
+      "p3": "Before choosing a gift, it is crucial to understand that an office gift exchange is still part of the professional environment. Common sense should dictate all your choices, from the packaging to the moment of the reveal. The first step is to strictly respect the established price range. Spending much less gives the impression of carelessness or lack of interest, while spending much more can look like showing off or a deliberate attempt to gain favor with management, creating an unnecessary competitive atmosphere.",
+      "p4": "Additionally, avoid excessive intimacy. Clothing with very specific sizes, strong perfumes, deep skincare cosmetics, or items with political, religious, or heavy inside-joke connotations should be left out entirely. If you do not know your coworker's consumption habits deeply, prefer to focus on a professional, friendly tone centered on general utility.",
+
+      "h2_2": "2. Useful Gift Suggestions: Under $15 / £15",
+      "p5": "In this price range, the secret is to focus on daily utility for the work routine or small comforts that make the office or home office space more pleasant. Premium stationery and organization items are excellent choices. A weekly planner or a minimalist notepad with neutral covers helps organized professionals structure their day. Multifunctional desk organizers for pens, clips, and phones are also great for keeping the space clean and productive.",
+      "p6": "Another classic that never loses its utility in this price range is the insulated mug or tumbler for coffee or water, ensuring the drink stays at the ideal temperature during long meetings. Ergonomic faux leather desk pads are also on the list of great options, as they transform the look of any work desk, protect equipment, and offer comfort when moving the mouse during the daily shift.",
+
+      "h2_3": "3. Sophisticated Gift Suggestions: Under $30 / £30",
+      "p7": "With a slightly higher budget, it is possible to look for gifts with greater perceived value, focusing on accessible technology or differentiated gastronomic experiences. In the daily tech category, a wireless induction charger to leave on the work desk is a modern and practical choice that eliminates messy cables. Travel cable and accessory organizers (pouches) are also perfect for coworkers who travel for business or work in a hybrid model and need to transport notebooks and mice frequently.",
+      "p8": "For food and beverage enthusiasts, specialty coffee kits or imported fine tea blends accompanied by an elegant infuser are refined and highly professional gifts. Boxes of fine chocolates or artisanal truffles from premium chocolatiers, with impressive packaging, are also surefire hits that please most people without overstepping work etiquette boundaries.",
+
+      "h2_4": "4. What NEVER to Gift at the Office",
+      "p9": "To ensure your name does not become the main topic of water cooler gossip for the wrong reasons, avoid impersonal or invasive items at all costs. Generic supermarket gift cards give the impression that you bought the gift in a rush five minutes before the party; if you choose a gift card, prefer major e-commerce platforms or bookstores. Underwear, pajamas, or towels are far too intimate for the corporate environment and cause severe embarrassment.",
+      "p10": "Also, avoid gifts with an aggressive aesthetic nature or those that could be interpreted as indirect criticism of a colleague's appearance or behavior, such as bathroom scales, anti-acne kits, weight loss creams, or self-help books focused on behavioral flaws. Keep the focus on lightness and professionalism to ensure the activity is enjoyable for everyone.",
+
+      "h2_5": "5. Drew the Boss? Stay Calm!",
+      "p11": "If the draw revealed the name of your manager, director, or the company CEO, do not panic. The most common mistake here is trying to impress by buying something excessively expensive, which breaks the price rule and creates discomfort. The ideal strategy for gifting management is to bet on classic corporate minimalism. A good professional development book or best-selling biography, a premium leather passport holder, or a selected gourmet coffee kit shows that you respect their position without crossing professional boundaries.",
+
+      "h2_6": "Conclusion: Last-Minute Organization via WhatsApp",
+      "p12": "We know that the year-end rush inside companies is intense. Closing reports and final goals consume all available time. Often, the idea for Secret Santa comes up at the last minute, and no one has time to cut papers, find a box, and gather everyone in a room for the draw. To prevent the fun from dying or turning into a mess of lost emails, the solution is to bring the event to where your team already talks all day: WhatsApp. Using our platform, the organizer creates the group in less than 2 minutes and sends the results directly to each colleague's app, ensuring total secrecy, practicality, and maximum engagement to celebrate the team's unforgettable moments!"
+    },
+    "brincadeiras-revelacao": {
+      "title": "Games for the Reveal Day: How to Reveal Your Secret Santa in a Fun Way",
+      "date": "May 16, 2026",
+      "p1": "The draw is done, the gifts are bought, and anticipation is building. The big reveal day has finally arrived! However, getting straight to the point and just handing over the packages can make the moment feel mechanical and dull. The true charm of a Secret Santa exchange lies in the interaction, the laughs, and the suspense before discovering who drew whom. Whether it is a family gathering in the living room, a barbecue with childhood friends, or an office holiday party, adding dynamics to this moment transforms a common event into an unforgettable memory.",
+      "p2": "With the rise of hybrid and digital gatherings, many of these traditional dynamics have taken on new forms, allowing even those who are far away to participate in the fun with the same intensity. To help you break away from the obvious and make the event light, fun, and dynamic, we have prepared a list of the best games and creative ways to reveal your Secret Santa.",
+
+      "h2_1": "1. The Adapted Classic: Description by Traits and Characteristics",
+      "p3": "The most traditional dynamic consists of describing the person you drew without mentioning their name, but you can make it much more entertaining by adding extra rules. Instead of focusing only on obvious traits like 'they wear glasses' or 'they sit near me,' try focusing on funny facts, harmless habits, memorable moments you shared during the year, or peculiar hobbies they have. This forces the rest of the group to truly interact to try and guess.",
+      "p4": "If the group is too large or time is short, an excellent variation is using 'keywords.' The participant whose turn it is chooses three adjectives or specific terms that perfectly summarize their Secret Santa and writes them down (or types them into the video call chat). The group has only three collective attempts to guess the name based on these clues before the official reveal.",
+
+      "h2_2": "2. Bad Santa or Roast Style: Humor in the Right Measure",
+      "p5": "For groups that are already very close, such as long-time friends or tight-knit work teams, a gentle 'Roast' dynamic is a guarantee of great laughs. The guessing mechanic is strictly the same as the traditional format, but with a twist: instead of praising your person right from the start, you should begin by highlighting their funny 'flaws,' memorable blunders of the year, or comical quirks.",
+      "p6": "You can mention that friend who always loses their keys, the coworker who always accidentally leaves their microphone unmuted in meetings, or the one who is always late for appointments. The fundamental care here is to maintain common sense and absolute respect: the jokes must focus strictly on lighthearted and relaxed situations, ensuring that the atmosphere remains friendly and everyone has fun together.",
+
+      "h2_3": "3. Reveal by Charades or Drawing",
+      "p7": "If you want to raise the energy of the room and get everyone out of their chairs, a charades reveal is the perfect choice. When your turn comes, you cannot say a single word. You must mimic a way of walking, a catchy catchphrase (expressed only through gestures), a specific hobby (such as fishing, playing video games, or running), or a classic situation that defines your Secret Santa until someone in the group guesses it.",
+      "p8": "For groups hosting the event virtually, this dynamic works perfectly using the digital whiteboard features of video platforms (like the Zoom or Google Meet whiteboard). The participant uses the mouse or touch screen to draw clues related to their person in real time, while others try to guess in the chat. It is an excellent way to break the ice and provide entertainment.",
+
+      "h2_4": "4. White Elephant (or Gift Stealing)",
+      "p9": "This is a completely different dynamic that is usually a huge hit at parties. In it, the previous draw only serves to define the order in which people will play (1st, 2nd, 3rd, etc.), and the purchased gifts should be neutral and unisex. All packages are placed on a central table. The first player chooses a gift from the table and opens it so everyone can see what it is. The second player faces a crucial choice: they can either 'steal' the opened gift from the first player or choose a closed, mysterious package from the table.",
+      "p10": "If a gift is stolen from someone, that person immediately wins the right to choose a new closed package or steal from someone else (with a limit on steals per round so the game doesn't become infinite). This game creates a very fun strategic atmosphere, unexpected twists, and lots of relaxation, as the most coveted gifts change hands several times until the end of the activity.",
+
+      "h2_5": "5. The Secret Santa Quiz",
+      "p11": "For groups that enjoy Q&A games, turning the reveal into a mini game show is an excellent idea. The participant asks three 'Yes or No' questions to the rest of the group about the person they drew (e.g., 'Does this person work on the tech team?', 'Does this person prefer hot or cold weather?', 'Does this person drink more than three coffees a day?'). As the group answers, the circle narrows until the correct name is revealed by elimination.",
+
+      "h2_6": "Conclusion: Practical Drawing and Focus on the Party",
+      "p12": "No matter which dynamic you choose for the reveal day, the main goal is to celebrate the group's unity in a lighthearted way. And to ensure that the prior organization doesn't consume your precious party planning time, use our tool. You create the group, manage the participants, and run the draw quickly and automated right through WhatsApp. With the bureaucratic part resolved in less than two minutes, you have much more time to prepare the games and guarantee an unforgettable event for everyone!"
     }
+  },
+  "Privacy": {
+    "title": "Privacy Policy",
+    "intro_title": "1. Introduction",
+    "intro_p": "Your privacy is important to us. It is Amigo Secreto Simples' policy to respect your privacy regarding any information we may collect from you across our website, and other sites we own and operate.",
+    "data_title": "2. Data Collection and Group Creation",
+    "data_p": "We ask for personal information, such as participants' names and emails, only when we truly need it to perform the draw and provide the service. We do so by fair and lawful means, with your knowledge and consent. Data from recently created groups is temporarily stored in your browser's local storage (localStorage/cookies) to facilitate its management and viewing, without unnecessary permanent retention on our servers.",
+    "cookies_title": "3. Cookies Policy",
+    "cookies_p": "We use cookies and similar technologies to improve your experience. You have control over which cookies you wish to accept through our privacy notice in the website footer.",
+    "cookies_essential": "Essential Cookies: These are necessary for the basic functioning of the website, such as temporarily saving participant lists and maintaining your privacy preferences.",
+    "cookies_analytical": "Analytical Cookies (Google Analytics): Help us understand how users interact with the website, helping us identify usability errors and improve the platform. These are only activated with your explicit consent by clicking 'Accept All'.",
+    "retention_title": "4. Data Use and Retention",
+    "retention_p": "We only retain collected information for as long as necessary to provide you with your requested service or to comply with legal obligations. When we store data, we protect it within commercially acceptable means to prevent loss and theft.",
+    "sharing_title": "5. Data Sharing",
+    "sharing_p": "We do not share any personally identifying information publicly or with third-parties, except when required by law or to enable the delivery of draw notifications requested by you.",
+    "rights_title": "6. Your Rights",
+    "rights_p": "You have the right to request access, correction, or deletion of your data. Since draw data is saved within your own browser, you can delete it yourself at any time by clearing your browser data or site cookies.",
+    "contact": "To exercise any of your rights or ask questions, please contact us via email at contato@migosecretosimples.com.br.",
+    "effective_date": "This policy is effective as of May 16, 2026."
+  },
+  "Terms": {
+    "title": "Terms of Service",
+    "terms_title": "1. Terms",
+    "terms_p": "By accessing the Amigo Secreto Simples website, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site.",
+    "conduct_title": "2. User Conduct and Appropriate Use",
+    "conduct_p": "When using our tool to create groups and organize draws, you commit to making appropriate use of the contents and information, ensuring you will not input names, terms, or emails containing offensive, defamatory, unlawful content, or content that violates human rights.",
+    "license_title": "3. Use License",
+    "license_p": "Permission is granted to temporarily use Amigo Secreto Simples' software for personal, non-commercial draw organization only. This is the grant of a license, not a transfer of title.",
+    "disclaimer_title": "4. Disclaimer",
+    "disclaimer_p": "The services on the website are provided on an 'as is' basis. Amigo Secreto Simples makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties of merchantability or fitness for a particular purpose.",
+    "law_title": "5. Governing Law",
+    "law_p": "These terms and conditions are governed by and construed in accordance with the laws of Brazil, and you irrevocably submit to the exclusive jurisdiction of the courts in that location."
+  },
+  "CookieBanner": {
+    "title": "We value your privacy 🍪",
+    "description": "We use essential cookies for the platform to work (such as remembering your recent group data) and analytical cookies to understand how to improve the site. Learn more in our <privacyLink>Privacy Policy</privacyLink> and <termsLink>Terms of Service</termsLink>.",
+    "btn_essential": "Essential Only",
+    "btn_all": "Accept All"
   }
 }

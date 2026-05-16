@@ -78,27 +78,11 @@
     "linksTitle": "Links",
     "linkContact": "Entre em contato",
     "linkPrivacy": "Privacidade",
+    "linkTerms": "Termos de Serviço",
     "catTitle": "Categorias",
     "catChocolate": "Amigo Chocolate",
     "catEaster": "Amigo Páscoa",
     "rights": "© 2026 Migo Secreto Simples. Todos os direitos reservados."
-  },
-  "Privacy": {
-    "title": "Política de Privacidade",
-    "p1": "A sua privacidade é importante para nós. É política do Amigo Secreto Simples respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site Amigo Secreto Simples, e outros sites e apps que possuímos e operamos.",
-    "p2": "Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.",
-    "p3": "Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.",
-    "p4": "Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.",
-    "p5": "O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade por suas respectivas políticas de privacidade.",
-    "p6": "Você é livre para recusar a nossa solicitação de informações pessoais, entendendo que talvez não possamos fornecer alguns dos serviços desejados.",
-    "p7": "O uso continuado de nosso site será considerado como aceitação de nossas práticas em torno de privacidade e informações pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do usuário e informações pessoais, entre em contacto connosco.",
-    "commitmentTitle": "Compromisso do Usuário",
-    "commitmentDesc": "O usuário se compromete a fazer uso adequado dos conteúdos e da informação que o Amigo Secreto Simples oferece no site e com caráter enunciativo, mas não limitativo:",
-    "l1": "Não se envolver em atividades que sejam ilegais ou contrárias à boa fé a à ordem pública;",
-    "l2": "Não difundir propaganda ou conteúdo de natureza racista, xenofóbica ou azar, qualquer tipo de pornografia ilegal, de apologia ao terrorismo ou contra os direitos humanos;",
-    "l3": "Não causar danos aos sistemas físicos (hardwares) e lógicos (softwares) do Amigo Secreto Simples, de seus fornecedores ou terceiros, para introduzir ou disseminar vírus informáticos ou quaisquer outros sistemas de hardware ou software que sejam capazes de causar danos anteriormente mencionados.",
-    "moreInfoTitle": "Mais Informações",
-    "moreInfoDesc": "Você pode entrar em contato conosco através do e-mail"
   },
   "GroupsPage": {
     "title": "Meus Grupos | Amigo Secreto",
@@ -259,7 +243,13 @@
     "p2Date": "22 de Fevereiro, 2026",
     "p3Title": "3 Variações divertidas do Amigo Secreto tradicional",
     "p3Desc": "Conheça o Amigo Ladrão, Amigo Chocolate e outras formas de inovar na brincadeira de fim de ano.",
-    "p3Date": "05 de Março, 2026"
+    "p3Date": "05 de Março, 2026",
+    "p4Title": "Amigo Secreto da Firma: Dicas para Não Errar no Presente do Chefe ou Colega",
+    "p4Desc": "O fim de ano no ambiente corporativo traz uma atmosfera de encerramento de ciclos, metas batidas e as famosas confraternizações.",
+    "p4Date": "12 de Abril, 2026",
+    "p5Title": "Brincadeiras para o Dia do Sorteio: Como Revelar o seu Amigo Secreto de Forma Divertida",
+    "p5Desc": "Transforme a troca de presentes em um momento inesquecível com dinâmicas criativas, curiosidades e muitas risadas.",
+    "p5Date": "16 de Maio, 2026"
   },
   "NotFound": {
     "title": "Página não encontrada",
@@ -342,6 +332,100 @@
 
       "h2_5": "Conclusão: O Importante é a Conexão do Grupo",
       "p10": "Independentemente de escolher o formato tradicional, o dinamismo do Amigo Ladrão ou as risadas do Inimigo Secreto, o real propósito dessas dinâmicas é aproximar as pessoas. Escolha a variação que melhor se adapta ao perfil e ao nível de entrosamento do seu grupo, defina regras claras para que todos joguem de forma confortável e aproveite o momento para fortalecer os laços com quem é importante para você!"
+    },
+    "amigo-secreto-firma": {
+      "title": "Amigo Secreto da Firma: Dicas para Não Errar no Presente do Chefe ou Colega",
+      "date": "12 de Abril, 2026",
+      "p1": "O fim de ano no ambiente corporativo traz uma atmosfera de encerramento de ciclos, metas batidas e as famosas confraternizações. Junto com as festas, chega um dos momentos mais tradicionais — e que frequentemente gera aquela pontada de ansiedade: o amigo secreto da firma. Organizar ou participar de um sorteio no trabalho é uma excelente oportunidade para estreitar laços com a equipe, quebrar o gelo entre diferentes departamentos e descontrair a rotina. No entanto, o ambiente profissional exige cuidados específicos. Afinal, a linha entre um presente criativo e uma escolha inadequada que pode gerar momentos desconfortáveis no cafezinho é muito tênue.",
+      "p2": "Se você tirou aquele colega de mesa com quem fala todos os dias, a tarefa é simples. Mas o que fazer se você tirou o CEO da empresa, o seu chefe direto, ou um colaborador de outro setor com quem você mal cruza no corredor? Para ajudar você a navegar por essa dinâmica sem cometer gafes, preparamos este guia definitivo. Aqui, você vai encontrar regras de etiqueta corporativa, sugestões de presentes divididas por faixas de preço e a melhor maneira de organizar esse evento na velocidade do ecossistema corporativo.",
+
+      "h2_1": "1. As Regras de Ouro do Amigo Secreto Corporativo",
+      "p3": "Antes de escolher o presente, é fundamental entender que o amigo secreto de trabalho ainda faz parte do ambiente profissional. O bom senso deve ditar todas as suas escolhas, desde a embalagem até o momento da revelação. O primeiro passo é respeitar rigorosamente a faixa de preço estipulada. Gastar muito menos transmite a ideia de desleixo ou falta de interesse, enquanto gastar muito mais pode parecer ostentação ou uma tentativa deliberada de aparecer perante a chefia, gerando um clima de competição desnecessário.",
+      "p4": "Além disso, evite intimidades excessivas. Roupas com tamanhos muito específicos, perfumes marcantes, cosméticos de tratamento profundo ou itens com conotação política, religiosa e piadas internas pesadas devem ficar totalmente de fora. Se você não conhece profundamente os hábitos de consumo do seu colega, prefira focar em um tom profissional, amigável e focado em utilidade geral.",
+
+      "h2_2": "2. Sugestões de Presentes Úteis: Até R$ 50",
+      "p5": "Nesta faixa de preço, o segredo é focar na utilidade diária para a rotina de trabalho ou em pequenos confortos que tornam o espaço do escritório ou do home office mais agradável. Itens de papelaria premium e organização são excelentes escolhas. Um planner semanal ou um bloco de notas minimalista com capas neutras ajudam profissionais organizados a estruturar o dia. Organizadores de mesa multifuncionais para canetas, clipes e celular também são ótimos para manter o espaço limpo e produtivo.",
+      "p6": "Outro clássico que nunca perde a utilidade nesta faixa de preço é o copo térmico para café ou água, garantindo que a bebida continue na temperatura ideal durante reuniões longas. Mousepads ergonômicos de couro sintético (desk pads) também entram na lista de ótimas opções, pois transformam o visual de qualquer mesa de trabalho, protegem os equipamentos e oferecem conforto ao movimentar o mouse durante a jornada diária.",
+
+      "h2_3": "3. Sugestões de Presentes Sofisticados: Até R$ 100",
+      "p7": "Com um orçamento de até R$ 100, é possível buscar presentes com maior valor percebido, focando em tecnologia acessível ou experiências gastronômicas diferenciadas. Na categoria de tecnologia para a rotina, um carregador por indução (sem fio) para deixar em cima da mesa de trabalho é uma escolha moderna e prática que elimina cabos espalhados. Organizadores de cabos e acessórios para viagem (pouches) também são perfeitos para colegas que viajam a trabalho ou atuam em modelo híbrido e precisam transportar notebooks e mouses frequentemente.",
+      "p8": "Para os amantes de gastronomia, kits de cafés especiais ou blends de chás finos importados acompanhados de um infusor elegante são presentes refinados e super profissionais. Caixas de bombons finos ou trufas artesanais de chocolaterias premium, com embalagens imponentes, também são tiros certeiros que agradam à grande maioria das pessoas sem ultrapassar os limites da etiqueta de trabalho.",
+
+      "h2_4": "4. O que NUNCA dar no Amigo Secreto da Firma",
+      "p9": "Para que o seu nome não vire o assunto principal da rádio corredor pelos motivos errados, evite itens despersonalizados ou invasivos a todo custo. Vales-presente de supermercado comuns passam a impressão de que você comprou o presente correndo nos últimos cinco minutos antes da festa; se optar por um cartão presente, prefira grandes e-commerces ou livrarias. Roupas íntimas, pijamas ou toalhas são íntimos demais para o ambiente corporativo e causam forte constrangimento.",
+      "p10": "Evite também presentes de cunho estético agressivo ou que possam ser interpretados como críticas indiretas à aparência ou postura do colega, tais como balanças de banheiro, kits antiacne, cremes redutores de medidas ou livros de autoajuda focados em falhas de comportamento. Mantenha o foco na leveza e no profissionalismo para garantir que a brincadeira seja agradável para todos.",
+
+      "h2_5": "5. Tirou o Chefe? Mantenha a Calma!",
+      "p11": "Se o sorteio revelou o nome do seu gestor, diretor ou do CEO da empresa, não entre em pânico. O erro mais comum aqui é tentar impressionar comprando algo excessivamente caro, o que quebra a regra de preço e gera desconforto. A estratégia ideal para presentear a chefia é apostar no minimalismo corporativo clássico. Um bom livro de desenvolvimento profissional ou biografia que esteja na lista dos mais vendidos, um porta-passaporte de couro premium ou um kit de café gourmet selecionado mostram que você respeita a posição dele sem ultrapassar as barreiras profissionais.",
+
+      "h2_6": "Conclusão: Organização de Última Hora pelo WhatsApp",
+      "p12": "Sabemos que a correria de fim de ano dentro das empresas é intensa. Fechamento de relatórios e metas finais consomem todo o tempo útil. Muitas vezes, a ideia do amigo secreto surge em cima da hora e ninguém tem tempo para cortar papéis, achar uma urna e reunir todo mundo em uma sala para o sorteio. Para evitar que a brincadeira morra ou vire uma confusão de e-mails perdidos, a solução é levar o evento para onde a sua equipe já passa o dia conversando: o WhatsApp. Utilizando a nossa plataforma, o organizador cria o grupo em menos de 2 minutos e dispara o resultado direto para o aplicativo de cada colega, garantindo sigilo total, praticidade e engajamento máximo para celebrar os momentos inesquecíveis da equipe!"
+    },
+    "brincadeiras-revelacao": {
+      "title": "Brincadeiras para o Dia do Sorteio: Como Revelar o seu Amigo Secreto de Forma Divertida",
+      "date": "16 de Maio, 2026",
+      "p1": "O sorteio foi realizado, os presentes foram comprados e a expectativa só aumenta. Chegou finalmente o grande dia da revelação! No entanto, ir direto ao ponto e apenas entregar os pacotes pode deixar o momento mecânico e sem graça. O verdadeiro charme do amigo secreto (ou amigo oculto) está na interação, nas risadas e no suspense que antecede a descoberta de quem tirou quem. Seja em uma reunião de família na sala de casa, no churrasco com os amigos de infância ou na confraternização da empresa, dinamizar esse momento transforma um evento comum em uma memória inesquecível.",
+      "p2": "Com a popularização dos encontros híbridos e digitais, muitas dessas dinâmicas tradicionais ganharam novas roupagens, permitindo que até quem está longe participe da diversão com a mesma intensidade. Para ajudar você a fugir do óbvio e transformar o dia do evento em um momento leve, divertido e dinâmico, preparamos uma lista com as melhores brincadeiras e formas criativas de revelar o seu amigo secreto.",
+
+      "h2_1": "1. O Clássico Adaptado: Descrição por Características e Adjetivos",
+      "p3": "A dinâmica mais tradicional de todas consiste em descrever o seu sorteado sem falar o nome dele, mas você pode deixar isso muito mais divertido adicionando regras extras. Em vez de focar apenas em aspectos óbvios como 'ele usa óculos' ou 'ela senta perto de mim', tente focar em fatos engraçados, manias saudáveis, momentos marcantes que passaram juntos no ano ou hobbies peculiares que a pessoa possui. Isso força o restante do grupo a interagir de verdade para tentar adivinhar.",
+      "p4": "Se o grupo for muito grande ou o tempo estiver curto, uma excelente variação é o uso de 'palavras-chave'. O participante da vez escolhe três adjetivos ou termos marcantes que resumem perfeitamente o seu amigo secreto e os escreve em um papel (ou joga no chat da chamada de vídeo). O grupo tem apenas três tentativas coletivas para adivinhar o nome com base nessas pistas antes da revelação oficial.",
+
+      "h2_2": "2. Inimigo Secreto: Humor na Medida Certa",
+      "p5": "Para grupos que já possuem bastante intimidade, como amigos de longa data ou equipes de trabalho muito unidas, a brincadeira do 'Inimigo Secreto' é garantia de boas gargalhadas. A mecânica de adivinhação é rigorosamente a mesma do formato tradicional, mas com uma reviravolta: em vez de elogiar o seu sorteado logo de início, você deve começar destacando os 'defeitos' engraçados, gafes memoráveis do ano ou manias cômicas da pessoa.",
+      "p6": "Vale falar sobre aquele amigo que sempre perde as chaves, o colega que vive deixando o microfone aberto na reunião por engano ou quem sempre chega atrasado nos compromissos. O cuidado fundamental aqui é manter o bom senso e o respeito absoluto: as brincadeiras devem focar estritamente em situações leves e descontraídas, garantindo que o clima continue amigável e que todos se divirtam juntos.",
+
+      "h2_3": "3. Revelação por Mímica ou Desenho",
+      "p7": "Se você quer elevar a energia do ambiente e fazer todo mundo levantar da cadeira, a revelação por mímica é a escolha perfeita. Quando chegar a sua vez, você não pode dizer absolutamente nenhuma palavra. Você deve imitar um jeito de andar, um jargão marcante (apenas expressado por gestos), um hobby específico (como pescar, jogar videogame ou correr) ou uma situação clássica que defina o seu amigo secreto até que alguém do grupo descubra.",
+      "p8": "Para os grupos que realizam o evento de forma virtual, essa dinâmica funciona perfeitamente utilizando os recursos de lousa digital das plataformas de vídeo (como o quadro branco do Zoom ou Google Meet). O participante usa o mouse ou a tela touch para desenhar pistas que remetam ao seu sorteado em tempo real, enquanto os outros tentam adivinhar pelo chat. É uma excelente forma de quebrar o gelo e gerar entretenimento.",
+
+      "h2_4": "4. O Amigo Ladrão (ou Roubo de Presentes)",
+      "p9": "Essa é uma dinâmica completamente diferente que costuma fazer muito sucesso em festas. Nela, o sorteio prévio serve apenas para definir a ordem em que as pessoas vão jogar (1º, 2º, 3º, etc.), e os presentes comprados devem ser neutros e unissex. Todos os pacotes são colocados em uma mesa central. O primeiro jogador escolhe um presente da mesa e o abre para que todos vejam o que é. O segundo jogador tem uma escolha crucial: ele pode 'roubar' o presente já aberto do primeiro jogador ou escolher um pacote fechado e misterioso da mesa.",
+      "p10": "Se um presente for roubado de alguém, essa pessoa ganha imediatamente o direito de escolher um novo pacote fechado ou roubar de outra pessoa (com um limite de roubos por rodada para o jogo não ficar infinito). Essa brincadeira gera um clima de estratégia muito divertido, reviravoltas inesperadas e muita descontração, pois os presentes mais cobiçados mudam de mãos várias vezes até o final da dinâmica.",
+
+      "h2_5": "5. O Quiz do Amigo Secreto",
+      "p11": "Para grupos que gostam de jogos de perguntas e respostas, transformar a revelação em um pequeno game show é uma excelente ideia. O participante faz três perguntas de 'Sim ou Não' para o restante do grupo sobre o seu sorteado (Ex: 'Essa pessoa trabalha no time de tecnologia?', 'Essa pessoa prefere calor ou frio?', 'Essa pessoa toma mais de três cafés por dia?'). Conforme o grupo responde, o cerco vai se fechando até que o nome correto seja revelado por eliminação.",
+
+      "h2_6": "Conclusão: Praticidade no Sorteio e Foco na Festa",
+      "p12": "Não importa qual dinâmica você escolha para o dia da revelação, o objetivo principal é celebrar a união do grupo de forma leve. E para garantir que a organização prévia não consuma o seu tempo precioso de planejamento da festa, utilize a nossa ferramenta. Você cria o grupo, gerencia os participantes e realiza o sorteio de forma rápida e automatizada direto pelo WhatsApp. Com a parte burocrática resolvida em menos de dois minutos, sobra muito mais tempo para você preparar as brincadeiras e garantir um evento inesquecível para todos!"
     }
+  },
+  "Privacy": {
+    "title": "Política de Privacidade",
+    "intro_title": "1. Introdução",
+    "intro_p": "A sua privacidade é importante para nós. É política do Amigo Secreto Simples respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site Amigo Secreto Simples, e outros sites que possuímos e operamos.",
+    "data_title": "2. Coleta de Dados e Criação de Grupos",
+    "data_p": "Solicitamos informações pessoais, como nomes e e-mails dos participantes, apenas quando realmente precisamos delas para realizar o sorteio e fornecer o serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Os dados dos grupos recém-criados são armazenados temporariamente no armazenamento local do seu navegador (localStorage/cookies) para facilitar a sua gestão e conferência, sem retenção permanente desnecessária em nossos servidores.",
+    "cookies_title": "3. Política de Cookies",
+    "cookies_p": "Utilizamos cookies e tecnologias semelhantes para melhorar a sua experiência. Você tem o controle sobre quais cookies deseja aceitar através do nosso aviso de privacidade no rodapé do site.",
+    "cookies_essential": "Cookies Essenciais: São necessários para o funcionamento básico do site, como salvar temporariamente as listas de participantes e manter suas preferências de privacidade.",
+    "cookies_analytical": "Cookies Analíticos (Google Analytics): Nos ajudam a entender como os usuários interagem com o site, ajudando a identificar erros de usabilidade e melhorar a plataforma. Estes só são ativados com o seu consentimento explícito clicando em 'Aceitar Todos'.",
+    "retention_title": "4. Uso e Retenção de Dados",
+    "retention_p": "Apenas retemos as informações coletadas pelo tempo estritamente necessário para fornecer o serviço solicitado ou cumprir obrigações legais. Quando armazenamos dados, os protegemos dentro de meios comercialmente aceitáveis para evitar perdas e roubos.",
+    "sharing_title": "5. Compartilhamento de Dados",
+    "sharing_p": "Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei ou para viabilizar o envio das notificações do sorteio solicitadas por você.",
+    "rights_title": "6. Seus Direitos (LGPD)",
+    "rights_p": "Em conformidade com a Lei Geral de Proteção de Dados (LGPD - Lei nº 13.709/2018), você tem o direito de solicitar a confirmação do tratamento, acesso, correção ou a eliminação definitiva de dados. Como os dados de sorteios ficam guardados no seu próprio navegador, você mesmo pode apagá-los limpando os dados de navegação ou os cookies do site.",
+    "contact": "Para exercer qualquer um de seus direitos ou tirar dúvidas, entre em contato através do e-mail contato@migosecretosimples.com.br.",
+    "effective_date": "Esta política é efetiva a partir de 16 de Maio de 2026."
+  },
+  "Terms": {
+    "title": "Termos de Serviço",
+    "terms_title": "1. Termos",
+    "terms_p": "Ao acessar ao site Amigo Secreto Simples, você concorda em cumprir estes termos de serviço, todas as leis e regulamentos aplicáveis e concorda que é responsável pelo cumprimento de todas as leis locais aplicáveis. Se você não concordar com algum desses termos, está proibido de usar ou acessar este site.",
+    "conduct_title": "2. Conduta do Usuário e Uso Adequado",
+    "conduct_p": "Ao utilizar a nossa ferramenta para criar grupos e organizar sorteios, você se compromete a fazer uso adequado dos conteúdos e das informações, garantindo que não irá inserir nomes, termos ou e-mails que contenham conteúdo ofensivo, difamatório, ilícito ou que violem os direitos humanos.",
+    "license_title": "3. Licença de Uso",
+    "license_p": "É concedida permissão para utilizar temporariamente o software do Amigo Secreto Simples apenas para fins pessoais e não comerciais de organização de sorteios. Esta é a concessão de uma licença de uso, não uma transferência de título.",
+    "disclaimer_title": "4. Isenção de Responsabilidade",
+    "disclaimer_p": "Os serviços no site são fornecidos 'como estão'. O Amigo Secreto Simples não oferece garantias, expressas ou implícitas, e, por este meio, isenta e nega todas as outras garantias, incluindo, sem limitação, garantias implícitas de comercialização ou adequação a um fim específico.",
+    "law_title": "5. Lei Aplicável",
+    "law_p": "Estes termos e condições são regidos e interpretados de acordo com as leis do Brasil, e você se submete à jurisdição exclusiva dos tribunais de sua localidade."
+  },
+  "CookieBanner": {
+    "title": "Nós valorizamos sua privacidade 🍪",
+    "description": "Usamos cookies essenciais para o funcionamento da plataforma (como lembrar os dados dos seus grupos recentes) e cookies analíticos para entender como melhorar o site. Saiba mais em nossa <privacyLink>Política de Privacidade</privacyLink> e nos <termsLink>Termos de Serviço</termsLink>.",
+    "btn_essential": "Apenas Essenciais",
+    "btn_all": "Aceitar Todos"
   }
 }
