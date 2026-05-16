@@ -1,8 +1,12 @@
-type AdSenseTypes = {
-  pId: string;
-};
+"use client";
 
-const AdSense = ({ pId }: AdSenseTypes) => {
+interface AdSenseProps {
+  pId: string;
+}
+
+export default function AdSense({ pId }: AdSenseProps) {
+  if (!pId) return null;
+
   return (
     <script
       async
@@ -11,5 +15,3 @@ const AdSense = ({ pId }: AdSenseTypes) => {
     />
   );
 };
-
-export default AdSense;

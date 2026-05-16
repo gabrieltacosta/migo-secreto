@@ -85,13 +85,17 @@ export default async function RootLayout({
   setRequestLocale(locale);
   const messages = await getMessages();
 
+  const adSenseId = process.env.NEXT_PUBLIC_AD_SENSE_ID as string
+
   return (
     <html
       lang={locale === "pt" ? "pt-BR" : locale}
       className={cn("h-full", "antialiased", "font-sans", inter.variable)}
     >
       <head>
-        <AdSense pId={process.env.NEXT_PUBLIC_AD_SENSE_ID as string} />
+        {adSenseId && (
+          <AdSense pId={adSenseId} />
+        )}
       </head>
       {/* 4. Removido o cz-shortcut-listen para evitar erro de hidratação */}
       <body className="min-h-full flex flex-col">
