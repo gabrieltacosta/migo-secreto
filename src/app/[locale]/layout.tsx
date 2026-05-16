@@ -10,6 +10,8 @@ import {
 } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import AdSense from "@/components/google/AdSense";
+import { GoogleAnalytics } from "@next/third-parties/google";
+
 
 export function generateStaticParams() {
   return [{ locale: "pt" }, { locale: "en" }, { locale: "es" }];
@@ -98,6 +100,7 @@ export default async function RootLayout({
           {children}
           <Footer />
         </NextIntlClientProvider>
+        <GoogleAnalytics gaId="G-QSNGHRJFJJ" />
       </body>
     </html>
   );

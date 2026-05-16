@@ -76,7 +76,7 @@ const Footer = () => {
           <ul className="space-y-2 text-sm">
             <li>
               <Link
-                href="mailto:contato@amigosecretosimples.com"
+                href="mailto:contato@amigosecretosimples.com.br"
                 className="hover:text-blue-400"
                 target="_blank"
               >

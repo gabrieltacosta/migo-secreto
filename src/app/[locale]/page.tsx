@@ -2,7 +2,7 @@ import Hero from "@/components/Hero";
 import StepsSection from "@/components/StepsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FaqSection from "@/components/FaqSection";
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 
 interface HomePageProps {
   params: Promise<{ locale: string }>;

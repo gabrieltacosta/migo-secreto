@@ -72,7 +72,7 @@ const PrivacyPage = async ({
               className="text-blue-600 hover:underline break-all"
               target="_blank"
             >
-              contato@amigosecretosimples.com
+              contato@migosecretosimples.com.br
             </Link>
           </p>
         </section>
