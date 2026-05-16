@@ -2,12 +2,35 @@
 
 import { Gift } from "lucide-react";
 import { useTranslations, useLocale } from "next-intl";
-import { Link, usePathname } from "@/i18n/routing"; // Importações do seu roteador customizado
+import { Link, usePathname } from "@/i18n/routing";
+import { SLUG_MAP, getOriginalKeyBySlug } from "@/i18n/slug"; // Importa o mapeamento de slugs
 
 const Footer = () => {
   const t = useTranslations("Footer");
-  const locale = useLocale(); // Descobre qual é o idioma atual (pt, en, es)
-  const pathname = usePathname(); // Pega a rota atual (ex: /, /groups, /privacy)
+  const locale = useLocale();
+  const pathname = usePathname();
+
+  // Função inteligente para calcular a URL correta para cada idioma no seletor
+  const getLocalizedPath = (targetLocale: string) => {
+    // Verifica se a rota atual faz parte do blog interno: /blog/algum-slug
+    if (pathname.startsWith("/blog/")) {
+      const currentSlug = pathname.replace("/blog/", "");
+
+      // 1. Descobre o ID imutável do post (Ex: "amigo-secreto-a-distancia")
+      const originalKey = getOriginalKeyBySlug(locale, currentSlug);
+
+      if (originalKey) {
+        // 2. Busca o slug traduzido correspondente ao idioma do botão clicado
+        const targetSlug = SLUG_MAP[targetLocale]?.[originalKey];
+        if (targetSlug) {
+          return `/blog/${targetSlug}`;
+        }
+      }
+    }
+
+    // Se for uma página institucional comum (ex: /, /privacy, /groups/new), mantém o caminho original
+    return pathname;
+  };
 
   return (
     <footer className="bg-[#0f172a] text-gray-400 py-12 px-6 mt-auto">
@@ -21,24 +44,24 @@ const Footer = () => {
           </div>
           <p className="text-xs">{t("description")}</p>
 
-          {/* SELETOR DE IDIOMAS INTELIGENTE */}
+          {/* SELETOR DE IDIOMAS INTELIGENTE E CORRIGIDO */}
           <div className="flex gap-4 text-xs font-bold uppercase mt-4">
             <Link
-              href={pathname}
+              href={getLocalizedPath("pt")}
               locale="pt"
               className={`transition-colors ${locale === "pt" ? "text-white" : "hover:text-white"}`}
             >
               BR
             </Link>
             <Link
-              href={pathname}
+              href={getLocalizedPath("en")}
               locale="en"
               className={`transition-colors ${locale === "en" ? "text-white" : "hover:text-white"}`}
             >
               US
             </Link>
             <Link
-              href={pathname}
+              href={getLocalizedPath("es")}
               locale="es"
               className={`transition-colors ${locale === "es" ? "text-white" : "hover:text-white"}`}
             >

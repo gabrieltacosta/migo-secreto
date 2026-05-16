@@ -7,22 +7,22 @@ export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
-      // Permite a raiz e a criação de grupos em todos os idiomas
+      // Permite a varredura das páginas institucionais e páginas de listagem do blog
       allow: [
         "/",
-        "/groups/new",
-        "/en/groups/new",
-        "/es/groups/new",
         "/blog",
         "/en/blog",
         "/es/blog",
+        "/groups/new",
+        "/en/groups/new",
+        "/es/groups/new",
       ],
-      // Bloqueia a indexação de grupos criados por usuários em qualquer idioma
+      // Bloqueia APIs e rotas de IDs dinâmicos de grupos para proteger os dados dos usuários
       disallow: [
         "/api/",
-        "/groups/",
-        "/en/groups/",
-        "/es/groups/", // Bloqueia o acesso a /groups/[id]
+        "/groups/",       // Bloqueia /groups/[id] em pt
+        "/en/groups/",    // Bloqueia /en/groups/[id]
+        "/es/groups/",    // Bloqueia /es/groups/[id]
       ],
     },
     sitemap: `${siteUrl}/sitemap.xml`,

@@ -1,61 +1,62 @@
 import { MetadataRoute } from "next";
-import path from "node:path";
+import { SLUG_MAP } from "@/i18n/slug";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl =
     process.env.NEXT_PUBLIC_APP_URL || "https://migosecretosimples.com.br";
 
-  // Array com as configurações base das suas rotas
-  const routes = [
+  const locales = ["pt", "en", "es"] as const;
+  const sitemapEntries: MetadataRoute.Sitemap = [];
+
+  // 1. Rotas Estáticas Padrão (Onde o slug não muda, apenas o locale na URL)
+  const staticRoutes = [
     { path: "", priority: 1.0, changeFrequency: "monthly" as const },
     { path: "/blog", priority: 0.8, changeFrequency: "yearly" as const },
     { path: "/groups/new", priority: 0.8, changeFrequency: "yearly" as const },
     { path: "/privacy", priority: 0.5, changeFrequency: "yearly" as const },
-    {
-      path: "/amigo-pascoa",
-      priority: 0.8,
-      changeFrequency: "yearly" as const,
-    },
-    {
-      path: "/amigo-chocolate",
-      priority: 0.8,
-      changeFrequency: "yearly" as const,
-    },
-    {
-      path: "/amigo-secreto-whatsapp",
-      priority: 0.9,
-      changeFrequency: "yearly" as const,
-    },
-    {
-      path: "/blog/dicas-presente-amigo-secreto",
-      priority: 0.8,
-      changeFrequency: "yearly" as const,
-    },
-    {
-      path: "/blog/amigo-secreto-a-distancia",
-      priority: 0.8,
-      changeFrequency: "yearly" as const,
-    },
-    {
-      path: "/blog/variacoes-divertidas-amigo-secreto",
-      priority: 0.8,
-      changeFrequency: "yearly" as const,
-    },
+    { path: "/amigo-pascoa", priority: 0.8, changeFrequency: "yearly" as const },
+    { path: "/amigo-chocolate", priority: 0.8, changeFrequency: "yearly" as const },
+    { path: "/amigo-secreto-whatsapp", priority: 0.9, changeFrequency: "yearly" as const },
   ];
 
-  // Mapeia as rotas gerando a URL principal e as alternativas em outros idiomas
-  return routes.map((route) => ({
-    url: `${baseUrl}${route.path}`,
-    lastModified: new Date(),
-    priority: route.priority,
-    changeFrequency: route.changeFrequency,
-    // Isso diz ao Google: "Esta página existe nestes outros idiomas também"
-    alternates: {
-      languages: {
-        "pt-BR": `${baseUrl}${route.path}`, // Padrão (sem prefixo, pois usamos 'as-needed')
-        en: `${baseUrl}/en${route.path}`, // Inglês
-        es: `${baseUrl}/es${route.path}`, // Espanhol
-      },
-    },
-  }));
+  // Força a criação física de uma URL no sitemap para cada idioma nas rotas estáticas
+  staticRoutes.forEach((route) => {
+    locales.forEach((locale) => {
+      // Se for 'pt', não usa prefixo (as-needed). Se for en/es, adiciona /en ou /es
+      const url = locale === "pt" 
+        ? `${baseUrl}${route.path}` 
+        : `${baseUrl}/${locale}${route.path}`;
+
+      sitemapEntries.push({
+        url,
+        lastModified: new Date(),
+        changeFrequency: route.changeFrequency,
+        priority: locale === "pt" ? route.priority : route.priority - 0.1, // Sutil ajuste de prioridade para secundários
+      });
+    });
+  });
+
+  // 2. Rotas Dinâmicas do Blog (Onde o slug MUDA dependendo do idioma)
+  const blogPostKeys = Object.keys(SLUG_MAP.pt);
+
+  blogPostKeys.forEach((key) => {
+    locales.forEach((locale) => {
+      const slugTraduzido = SLUG_MAP[locale][key];
+
+      if (slugTraduzido) {
+        const url = locale === "pt"
+          ? `${baseUrl}/blog/${slugTraduzido}`
+          : `${baseUrl}/${locale}/blog/${slugTraduzido}`;
+
+        sitemapEntries.push({
+          url,
+          lastModified: new Date(),
+          changeFrequency: "yearly" as const,
+          priority: locale === "pt" ? 0.8 : 0.7,
+        });
+      }
+    });
+  });
+
+  return sitemapEntries;
 }
