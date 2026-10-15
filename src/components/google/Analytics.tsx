@@ -4,26 +4,28 @@ import { useState, useEffect } from "react";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 export default function Analytics() {
-    // 1. Inicialização inteligente: lê o localStorage antes do primeiro render do componente
-    const [hasConsent, setHasConsent] = useState(() => {
-        // Garante que o código está rodando no navegador (client-side) antes de acessar o localStorage
-        if (typeof window !== "undefined") {
-            return localStorage.getItem("cookie_consent") === "all";
-        }
-        return false;
-    });
+  const [hasConsent, setHasConsent] = useState(false);
 
-    useEffect(() => {
-        // 2. O efeito agora cuida EXCLUSIVAMENTE de escutar o evento assíncrono do clique do botão
-        const handleConsent = () => setHasConsent(true);
-        window.addEventListener("consent_granted", handleConsent);
+  useEffect(() => {
+    // 1. Verifica se o usuário JÁ tinha aceitado em visitas anteriores
+    const consent = localStorage.getItem("cookie_consent");
+    if (consent === "all") {
+      setHasConsent(true);
+    }
 
-        return () => window.removeEventListener("consent_granted", handleConsent);
-    }, []);
+    // 2. Fica escutando caso o usuário clique no botão de aceitar AGORA
+    const handleConsent = () => setHasConsent(true);
+    window.addEventListener("consent_granted", handleConsent);
 
-    if (!hasConsent) return null;
+    // Limpeza do evento
+    return () => window.removeEventListener("consent_granted", handleConsent);
+  }, []);
 
-    return (
-        <GoogleAnalytics gaId="G-QSNGHRJFJJ" />
-    );
+  // Se não tem consentimento, retorna null (não carrega NADA)
+  if (!hasConsent) return null;
+
+  // Se tem consentimento, injeta os scripts do Google Analytics (ou Meta Pixel, etc.)
+  return (
+    <GoogleAnalytics gaId="G-QSNGHRJFJJ" />
+  );
 }
