@@ -9,33 +9,31 @@ import { X } from "lucide-react";
 export default function CookieConsent() {
     const t = useTranslations("CookieBanner");
     const [isVisible, setIsVisible] = useState(false);
-    const [mounted, setMounted] = useState(false);
 
-    useEffect(() => {
-        // Envelopar em um agendamento assíncrono resolve o erro de render síncrono em cascata
-        const timeoutId = setTimeout(() => {
-            setMounted(true);
+  useEffect(() => {
+    // Quando o componente monta, verifica no navegador se o usuário já respondeu
+    const consent = localStorage.getItem("cookie_consent");
+    if (!consent) {
+      setIsVisible(true);
+    }
+  }, []);
 
-            const consent = localStorage.getItem("cookie_consent");
-            if (!consent) {
-                setIsVisible(true);
-            }
-        }, 0);
+  const handleAccept = (type: "all" | "essential") => {
+    // Salva a escolha no navegador para não perguntar de novo
+    localStorage.setItem("cookie_consent", type);
+    setIsVisible(false);
 
-        return () => clearTimeout(timeoutId);
-    }, []);
+    if (type === "all") {
+      // DICA: É aqui que você dispararia o evento para carregar o Google Analytics
+      // Exemplo: window.dispatchEvent(new Event("accept_all_cookies"));
+      window.dispatchEvent(new Event("consent_granted"));
+    }
+  };
 
-    const handleAccept = (type: "all" | "essential") => {
-        localStorage.setItem("cookie_consent", type);
-        setIsVisible(false);
+  // Se o usuário já aceitou/recusou, o componente não renderiza nada
+  if (!isVisible) return null;
 
-        if (type === "all") {
-            window.dispatchEvent(new Event("consent_granted"));
-        }
-    };
-
-    // Retorna null se não estiver montado no cliente ou se o consentimento já existir
-    if (!mounted || !isVisible) return null;
+    
 
     return (
         <div className="fixed bottom-0 left-0 right-0 z-50 p-4 sm:p-6 animate-in fade-in duration-300">
