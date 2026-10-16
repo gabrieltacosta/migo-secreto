@@ -10,6 +10,7 @@ import {
 } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import AdSense from "@/components/google/AdSense";
+import Analytics from "@/components/google/Analytics";
 import CookieConsent from "@/components/CookieConsent";
 
 
@@ -91,19 +92,17 @@ export default async function RootLayout({
     <html
       lang={locale === "pt" ? "pt-BR" : locale}
       className={cn("h-full", "antialiased", "font-sans", inter.variable)}
+      suppressHydrationWarning
     >
-      <head>
-        {adSenseId && (
-          <AdSense pId={adSenseId} />
-        )}
-      </head>
       {/* 4. Removido o cz-shortcut-listen para evitar erro de hidratação */}
       <body className="min-h-full flex flex-col">
+        <AdSense pId={adSenseId} />
         <NextIntlClientProvider messages={messages}>
           <Header />
           {children}
           <Footer />
           <CookieConsent />
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>

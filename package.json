@@ -45,5 +45,14 @@
     "prisma": "^7.5.0",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "allowScripts": {
+    "msw@2.12.14": true,
+    "prisma@7.5.0": true,
+    "sharp@0.34.5": true,
+    "unrs-resolver@1.11.1": true,
+    "@parcel/watcher@2.5.6": true,
+    "@prisma/engines@7.5.0": true,
+    "@swc/core@1.15.21": true
   }
 }
