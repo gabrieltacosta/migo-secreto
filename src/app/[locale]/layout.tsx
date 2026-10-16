@@ -102,8 +102,8 @@ export default async function RootLayout({
           {children}
           <Footer />
           <CookieConsent />
-          <Analytics />
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );
