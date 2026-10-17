@@ -42,6 +42,10 @@ export async function generateMetadata({
   // Puxa as traduções do namespace "Metadata"
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
+  const localePath = locale === "pt" ? "" : `/${locale}`;
+
+  const currentUrl = `${siteUrl}${localePath}`;
+
   return {
     metadataBase: new URL(siteUrl),
     title: {
@@ -53,7 +57,7 @@ export async function generateMetadata({
     openGraph: {
       title: t("title"),
       description: t("description"),
-      url: siteUrl,
+      url: currentUrl,
       siteName: t("title"),
       images: [{ url: `${siteUrl}/gift.png` }],
       locale: locale === "pt" ? "pt_BR" : locale,
@@ -66,7 +70,7 @@ export async function generateMetadata({
       images: [`${siteUrl}/gift.png`],
     },
     alternates: {
-      canonical: siteUrl,
+      canonical: currentUrl,
       languages: {
         "pt-BR": siteUrl,
         en: `${siteUrl}/en`,
